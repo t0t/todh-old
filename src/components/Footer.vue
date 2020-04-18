@@ -1,9 +1,7 @@
 <template>
   <section>
-    <AuthorBio msg="About" />
-    <CV msg="CV" />
     <footer class="Footer">
-      <!-- <img alt="Vue logo" src="../assets/logo-todh-2.svg" /> -->
+      <img alt="Vue logo" src="../assets/logo-todh-2.svg" />
       <small>{{ msg }}</small>
       <SocialLinks />
     </footer>
@@ -11,19 +9,15 @@
 </template>
 
 <script>
-import AuthorBio from "./AuthorBio.vue";
 import SocialLinks from "./SocialLinks.vue";
-import CV from "./CV.vue";
 export default {
   name: "Footer",
   props: {
     msg: String,
   },
   components: {
-    AuthorBio,
-    CV,
     SocialLinks
-  }
+  },
 };
 </script>
 

@@ -53,10 +53,10 @@ npm run lint
 ```
 
 ### Todo List
-- change favicon
-- inline svg
-- routing
-- Prismic implementation
+- [x] Change favicon & title page
+- [x] Inline svg with Nucleo Icons
+- [x] Routing in Vue
+- [ ] Prismic implementation
 
 
 ### Configuration

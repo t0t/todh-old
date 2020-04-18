@@ -1,6 +1,6 @@
 <template>
   <section class="Features">
-    <img alt="Feature img" src="../assets/grafico-1.svg" />
+    <img alt="Feature img" src="@/assets/grafico-1.svg" />
     <h2 class="FeaturesTitle">{{ msg }}</h2>
     <dl class="FeaturesList">
       <dt>Arte visual</dt>
