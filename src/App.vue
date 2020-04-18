@@ -20,10 +20,10 @@
 
 #nav {
   padding: $size;
-
   position: fixed;
   right: 0;
   z-index: 1;
+
   a {
     // font-weight: bold;
     text-decoration: none;
