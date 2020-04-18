@@ -1,4 +1,36 @@
-# todh
+# 🏄TODH - holistic prototype
+
+Living prototype based on a systemic-functional paradigm. 
+
+- Acción contínua incremental.
+- Instantly prototype new ideas
+
+## Mi propósito
+
+Enfocado en encontrar interconexiones sistémicas eficientes entre ideas y hechos, desde una visión holística del proceso creativo donde el todo es más que la suma de sus partes.
+
+## Goal
+
+I give my clients a very basic functional prototype as starting point with functionality and desired tech stack and then developers could give it superpowers bringing it to the next level.
+
+## Tech stack 
+
+- JAMstack based philosophy
+- Vuejs CLI
+- Prismic (or similar) for CMS
+- Componentized System Design
+- Github Pages / Netlify for hosting
+
+------------------
+
+## 2 step deploy on Gh-pages
+```
+chmod +x deploy.sh 
+```
+Run command from project root:
+```
+./deploy.sh
+```
 
 ## Project setup
 ```
@@ -20,6 +52,13 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
+### Todo List
+- change favicon
+- inline svg
+- routing
+- Prismic implementation
+
+
+### Configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-# todh
+See [Guide](https://cli.vuejs.org/guide/).

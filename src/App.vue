@@ -9,23 +9,28 @@
 </template>
 
 <style lang="scss">
+@import "@/styles/main.scss";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: $primary_font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
+  padding: $size;
 
+  position: fixed;
+  right: 0;
+  z-index: 1;
   a {
-    font-weight: bold;
-    color: #2c3e50;
+    // font-weight: bold;
+    text-decoration: none;
+    color: $white;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: $secondary;
     }
   }
 }

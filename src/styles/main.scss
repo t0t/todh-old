@@ -1,0 +1,49 @@
+@import "./_variables.scss";
+
+body {
+  background-color: $light_grey;
+  margin: 0;
+}
+
+section {
+  min-height: 50vh;
+}
+
+a {
+  color: $secondary;
+}
+
+dl {
+  background-color: $tertiary;
+  display: inherit;
+}
+
+dt {
+  font-weight: bold;
+  padding-top: $size / 3;
+}
+
+dd {
+  margin-left: 0;
+  &:last-child {
+    padding-bottom: $size / 3;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 40px 0 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
