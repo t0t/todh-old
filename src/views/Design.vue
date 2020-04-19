@@ -15,7 +15,7 @@
 
     <Features
       feature1="Tech Stack"
-      feature1b="Vuejs, Github Pages, JAMStack, Sass, Node..."
+      feature1b="Vuejs, Github Pages, JAMStack, Sass, NPM, Nucleo Icons"
       feature2="Prototipado holístico de UI"
       feature2b="Atomic Design"
       feature3="Prototipado evolutivo"
@@ -41,7 +41,7 @@ export default {
     Cover,
     BioExcerpt,
     Features,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
