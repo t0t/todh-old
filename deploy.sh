@@ -20,7 +20,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:t0t/todh.git master:gh-pages
+git push -f git@github.com:t0t/todh.git master:gh-pages
 
 # En caso de no tener configurado su cuenta de GitHub para conectarse via SSH
 # git push -f https://github.com/t0t/todh.git master:gh-pages
