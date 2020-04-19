@@ -8,16 +8,18 @@
       bgimg="img4"
     />
 
-    <Features
-      feature1="Piezas de arte impresas en 3D"
-      feature1b="Sentir orden. Formar conexión."
-      feature2="Prototipado holístico de UI"
-      feature2b="Modular. Fast. Holistic"
-      feature3="Corpus teórico TODH"
-      feature3b="Una visión incursiva del Misterio de la Creación."
+    <Card
+      bgimg="img3"
+      title="Titulo Card"
+      subtitle="Subtitulo"
+      text="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet."
     />
-
-    <Gallery />
+    <Card
+      bgimg="img6"
+      title="Titulo Card"
+      subtitle="Subtitulo"
+      text="Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure."
+    />
 
     <Footer />
   </div>
@@ -27,8 +29,7 @@
 // @ is an alias to /src
 import Cover from "@/components/Cover.vue";
 import Brand from "@/components/Brand.vue";
-import Features from "@/components/Features.vue";
-import Gallery from "@/components/Gallery.vue";
+import Card from "@/components/Card.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -36,8 +37,7 @@ export default {
   components: {
     Cover,
     Brand,
-    Features,
-    Gallery,
+    Card,
     Footer
   }
 };

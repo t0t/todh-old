@@ -53,7 +53,6 @@ export default {
 .Gallery {
   margin-bottom: $size / 2;
   background-color: $tertiary;
-  
   @media (min-width: 1152px) {
     padding: $size / 2;
   }

@@ -33,7 +33,6 @@ export default {
 
   svg {
     width: 60%;
-    
     @media (min-width: 1024px) {
       width: 200px;
       font-size: 5em;
