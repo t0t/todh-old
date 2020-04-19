@@ -1,8 +1,10 @@
 <template>
   <div class="home">
     <Brand />
+
     <Features msg="Areas de investigación" />
-    <Footer msg="Sergio Fores" />
+
+    <Footer />
   </div>
 </template>
 
@@ -17,7 +19,7 @@ export default {
   components: {
     Brand,
     Features,
-    Footer
+    Footer,
   },
 };
 </script>

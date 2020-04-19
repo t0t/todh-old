@@ -1,19 +1,25 @@
 <template>
-  <section class="Cover">
-    <h2 class="CoverTitle">{{ msg }}</h2>
-    <h3 class="CoverSubtitle">Catálogo de obras impresas en 3D</h3>
-      <h3 class="CoverSubtitle"> Prototipado evolutivo de sitios web</h3>
-      <h3 class="CoverSubtitle"> Corpus teórico sobre el proceso de la creación.</h3>
+  <section class="Cover" :style="{ backgroundImage: `url(${imgurl})` }">
+    <h2 class="CoverTitle">{{ title }}</h2>
+    <h3 class="CoverSubtitle">{{ subtitle }}</h3>
+    <p>Catálogo de obras impresas en 3D</p>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Cover',
+  name: "Cover",
   props: {
-    msg: String
-  }
-}
+    title: String,
+    subtitle: String,
+    bgimg: String,
+  },
+  computed: {
+    imgurl() {
+      return require("../assets/" + this.bgimg + ".jpg");
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -21,7 +27,6 @@ export default {
 @import "@/styles/main.scss";
 
 .Cover {
-  background-image: url('../assets/img4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 50%;
@@ -42,5 +47,4 @@ export default {
   width: 30%;
   color: $white;
 }
-
 </style>

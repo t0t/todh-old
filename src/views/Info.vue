@@ -1,10 +1,16 @@
 <template>
   <div class="info">
-    <Cover msg="Todo es relación" />
-
     <Brand />
 
-    <Footer msg="Sergio Fores" />
+    <Cover 
+    title="Todo es relación" 
+    subtitle="subtitulo" 
+    bgimg="img2"
+     />
+
+    <Features msg="Todo es relación" />
+
+    <Footer />
   </div>
 </template>
 
@@ -12,6 +18,7 @@
 // @ is an alias to /src
 import Cover from "@/components/Cover.vue";
 import Brand from "@/components/Brand.vue";
+import Features from "@/components/Features.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -19,6 +26,7 @@ export default {
   components: {
     Cover,
     Brand,
+    Features,
     Footer,
   },
 };

@@ -1,10 +1,18 @@
 <template>
   <div class="home">
-    <Cover msg="Sentir orden forma conexión" />
     <Brand />
+    
+    <Cover 
+    title="Sentir orden forma conexión" 
+    subtitle="Sentir orden forma conexión" 
+    bgimg="img4"
+    />
+
     <Features msg="Areas de investigación" />
+
     <Gallery msg="Artwork" />
-    <Footer msg="Sergio Fores" />
+    
+    <Footer />
   </div>
 </template>
 
