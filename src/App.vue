@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <!-- <slider></slider> -->
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
+      <router-link to="/">Artwork</router-link>
+      <router-link to="/about">About</router-link>
       <router-link to="/info">Info</router-link>
     </div>
     <router-view />
@@ -29,9 +28,12 @@
   a {
     text-decoration: none;
     color: $white;
+    padding: ($size / 8) ($size / 7);
 
     &.router-link-exact-active {
-      color: $secondary;
+      color: $tertiary;
+      background-color: $black_light;
+
       &:hover {
         cursor: default;
       }

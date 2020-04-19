@@ -49,7 +49,7 @@ export default {
     IconTwitter,
     IconGithub,
     IconFacebook
-  },
+  }
 };
 </script>
 

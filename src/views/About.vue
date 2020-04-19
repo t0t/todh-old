@@ -2,7 +2,13 @@
   <div class="home">
     <Brand />
 
-    <Features msg="Areas de investigación" />
+    <Cover
+      title="Sentir orden forma conexión"
+      subtitle="Sentir orden forma conexión"
+      bgimg="img5"
+    />
+
+    <BioExcerpt msg="Areas de investigación" />
 
     <Footer />
   </div>
@@ -11,15 +17,17 @@
 <script>
 // @ is an alias to /src
 import Brand from "@/components/Brand.vue";
-import Features from "@/components/Features.vue";
+import Cover from "@/components/Cover.vue";
+import BioExcerpt from "@/components/BioExcerpt.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
     Brand,
-    Features,
-    Footer,
-  },
+    Cover,
+    BioExcerpt,
+    Footer
+  }
 };
 </script>

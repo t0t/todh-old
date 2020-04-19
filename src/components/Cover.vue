@@ -12,13 +12,13 @@ export default {
   props: {
     title: String,
     subtitle: String,
-    bgimg: String,
+    bgimg: String
   },
   computed: {
     imgurl() {
       return require("../assets/" + this.bgimg + ".jpg");
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -38,7 +38,7 @@ export default {
   margin-top: 100px;
   text-align: left;
   width: 75%;
-  color: $primary;
+  color: $white;
   font-size: 80px;
 }
 

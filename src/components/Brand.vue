@@ -1,12 +1,19 @@
 <template>
   <div class="Brand">
-    <img alt="Vue logo" src="@/assets/logo-todh-2.svg" />
+    <a href="/" rel="">
+      <IcoLogo />
+    </a>
   </div>
 </template>
 
 <script>
+import IcoLogo from "./icons/IcoLogo.vue";
+
 export default {
   name: "Brand",
+  components: {
+    IcoLogo
+  }
 };
 </script>
 
@@ -23,9 +30,17 @@ export default {
   align-items: center;
   margin: 0;
   color: $white;
-}
-.Brand img {
-  max-width: 100px;
-  margin: $size / 2;
+
+  & path.sentir {
+    fill: $black_light;
+    stroke: none;
+  }
+  & path.hacer {
+    stroke: $dark_grey;
+    stroke-width: 0.5px;
+  }
+  & circle {
+    fill: $secondary;
+  }
 }
 </style>

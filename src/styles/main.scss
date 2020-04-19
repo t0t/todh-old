@@ -13,6 +13,15 @@ a {
   color: $secondary;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: left;
+}
+
 dl {
   background-color: $tertiary;
   display: inherit;

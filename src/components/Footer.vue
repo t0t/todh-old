@@ -1,11 +1,9 @@
 <template>
-  <section>
-    <footer class="Footer">
-      <img alt="Vue logo" src="@/assets/logo-todh-2.svg" />
-      <small>Sergio Forés</small>
-      <SocialLinks />
-    </footer>
-  </section>
+  <footer class="Footer">
+    <img alt="Vue logo" src="@/assets/logo-todh-2.svg" />
+    <small>Sergio Forés</small>
+    <SocialLinks />
+  </footer>
 </template>
 
 <script>
@@ -13,11 +11,11 @@ import SocialLinks from "./SocialLinks.vue";
 export default {
   name: "Footer",
   props: {
-    msg: String,
+    msg: String
   },
   components: {
     SocialLinks
-  },
+  }
 };
 </script>
 
