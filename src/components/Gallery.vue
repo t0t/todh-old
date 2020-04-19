@@ -1,10 +1,10 @@
 <template>
   <section class="Gallery">
     <img
-      v-for="image in images"
+      v-for="(image, idx) in images"
       :src="image.src"
       :alt="image.text"
-      :key="image"
+      :key="idx"
     />
   </section>
 </template>

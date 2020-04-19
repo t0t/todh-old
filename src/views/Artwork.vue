@@ -2,7 +2,7 @@
   <div class="artwork">
     <Brand />
 
-    <Gallery msg="Artwork" />
+    <Gallery />
 
     <BioExcerpt
       texto1="Sergio Forés es Diseñador Gráfico/Frontend especializado en desarrollo

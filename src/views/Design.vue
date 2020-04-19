@@ -41,7 +41,7 @@ export default {
     Cover,
     BioExcerpt,
     Features,
-    Footer,
-  },
+    Footer
+  }
 };
 </script>

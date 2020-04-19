@@ -17,7 +17,7 @@
       feature3b="Una visión incursiva del Misterio de la Creación."
     />
 
-    <Gallery msg="Artwork" />
+    <Gallery />
 
     <Footer />
   </div>
