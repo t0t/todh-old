@@ -40,13 +40,17 @@ export default {
 .CoverTitle {
   margin: 0;
   color: $white;
-  font-size: 5em;
+  font-size: 3em;
+  
+  @media (min-width: 900px) {
+    font-size: 5em;
+  }
 }
+
 
 .CoverSubtitle {
   margin: 0;
-  padding: $size;
-  width: 40%;
+  padding: $size / 2;
   color: $white;
 }
 </style>

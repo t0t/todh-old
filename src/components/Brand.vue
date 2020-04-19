@@ -31,6 +31,15 @@ export default {
   margin: 0;
   color: $white;
 
+  svg {
+    width: 60%;
+    
+    @media (min-width: 1024px) {
+      width: 200px;
+      font-size: 5em;
+    }
+  }
+
   a {
     padding: $size / 4;
   }

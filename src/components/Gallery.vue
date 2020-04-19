@@ -52,10 +52,16 @@ export default {
 
 .Gallery {
   margin-bottom: $size / 2;
-  padding: $size / 2;
   background-color: $tertiary;
+  
+  @media (min-width: 1152px) {
+    padding: $size / 2;
+  }
 }
 .Gallery img {
-  max-width: 500px;
+  width: 100%;
+  @media (min-width: 900px) {
+    max-width: 500px;
+  }
 }
 </style>
