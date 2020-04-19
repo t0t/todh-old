@@ -1,12 +1,12 @@
 <template>
   <section class="Gallery">
     <h1 class="GalleryTitle">{{ msg }}</h1>
-    <img alt="Img gallery" src="../assets/img1.jpg" />
-    <img alt="Img gallery" src="../assets/img2.jpg" />
-    <img alt="Img gallery" src="../assets/img3.jpg" />
-    <img alt="Img gallery" src="../assets/img4.jpg" />
-    <img alt="Img gallery" src="../assets/img5.jpg" />
-    <img alt="Img gallery" src="../assets/img6.jpg" />
+    <img
+      v-for="image in images"
+      :src="image.src"
+      :alt="image.text"
+      :key="image"
+    />
   </section>
 </template>
 
@@ -15,7 +15,36 @@ export default {
   name: "Gallery",
   props: {
     msg: String,
-  },
+    images: {
+      type: Array,
+      default: () => [
+        {
+          src: "./gallery/img1.jpg",
+          text: "Img gallery 1"
+        },
+        {
+          src: "./gallery/img2.jpg",
+          text: "Img gallery 2"
+        },
+        {
+          src: "./gallery/img3.jpg",
+          text: "Img gallery 3"
+        },
+        {
+          src: "./gallery/img4.jpg",
+          text: "Img gallery 4"
+        },
+        {
+          src: "./gallery/img5.jpg",
+          text: "Img gallery 5"
+        },
+        {
+          src: "./gallery/img6.jpg",
+          text: "Img gallery 6"
+        }
+      ]
+    }
+  }
 };
 </script>
 

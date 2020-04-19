@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <slider></slider> -->
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
@@ -26,12 +27,14 @@
   z-index: 1;
 
   a {
-    // font-weight: bold;
     text-decoration: none;
     color: $white;
 
     &.router-link-exact-active {
       color: $secondary;
+      &:hover {
+        cursor: default;
+      }
     }
   }
 }

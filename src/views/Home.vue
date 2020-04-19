@@ -1,17 +1,17 @@
 <template>
   <div class="home">
     <Brand />
-    
-    <Cover 
-    title="Sentir orden forma conexión" 
-    subtitle="Sentir orden forma conexión" 
-    bgimg="img4"
+
+    <Cover
+      title="Sentir orden forma conexión"
+      subtitle="Sentir orden forma conexión"
+      bgimg="img4"
     />
 
     <Features msg="Areas de investigación" />
 
     <Gallery msg="Artwork" />
-    
+
     <Footer />
   </div>
 </template>
@@ -32,6 +32,6 @@ export default {
     Features,
     Gallery,
     Footer
-  },
+  }
 };
 </script>

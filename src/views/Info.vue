@@ -2,11 +2,7 @@
   <div class="info">
     <Brand />
 
-    <Cover 
-    title="Todo es relación" 
-    subtitle="subtitulo" 
-    bgimg="img2"
-     />
+    <Cover title="Todo es relación" subtitle="subtitulo" bgimg="img2" />
 
     <Features msg="Todo es relación" />
 
@@ -27,7 +23,7 @@ export default {
     Cover,
     Brand,
     Features,
-    Footer,
-  },
+    Footer
+  }
 };
 </script>
