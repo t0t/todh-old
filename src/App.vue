@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Artwork</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link to="/artwork">ARTWORK</router-link>
+      <router-link to="/design">DESIGN</router-link>
       <router-link to="/info">Info</router-link>
     </div>
     <router-view />
@@ -29,6 +29,7 @@
     text-decoration: none;
     color: $white;
     padding: ($size / 8) ($size / 7);
+    letter-spacing: 1px;
 
     &.router-link-exact-active {
       color: $tertiary;

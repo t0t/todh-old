@@ -1,12 +1,8 @@
 <template>
-  <div class="info">
+  <div class="artwork">
     <Brand />
 
-    <Cover
-      title="Observar. Discernir. Hacer. Transmitir."
-      subtitle="T-O-D-H"
-      bgimg="img2"
-    />
+    <Gallery msg="Artwork" />
 
     <BioExcerpt
       texto1="Sergio Forés es Diseñador Gráfico/Frontend especializado en desarrollo
@@ -23,34 +19,23 @@
         concreta."
     />
 
-    <Features
-      feature1="Coherencia"
-      feature1b="Sentir orden. Formar conexión."
-      feature2="Prototipado holístico de UI"
-      feature2b="Modular. Fast. Holistic"
-      feature3="Corpus teórico TODH"
-      feature3b="Una visión incursiva del Misterio de la Creación."
-    />
-
     <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Cover from "@/components/Cover.vue";
 import Brand from "@/components/Brand.vue";
+import Gallery from "@/components/Gallery.vue";
 import BioExcerpt from "@/components/BioExcerpt.vue";
-import Features from "@/components/Features.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "Info",
+  name: "Artwork",
   components: {
-    Cover,
     Brand,
+    Gallery,
     BioExcerpt,
-    Features,
     Footer
   }
 };

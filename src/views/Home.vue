@@ -3,12 +3,19 @@
     <Brand />
 
     <Cover
-      title="Sentir orden forma conexión"
-      subtitle="Sentir orden forma conexión"
+      title="Sergio Forés"
+      subtitle="Holistic 3D-Printed Artwork & Hi-Res Web Prototyping"
       bgimg="img4"
     />
 
-    <Features msg="Areas de investigación" />
+    <Features
+      feature1="Piezas de arte impresas en 3D"
+      feature1b="Sentir orden. Formar conexión."
+      feature2="Prototipado holístico de UI"
+      feature2b="Modular. Fast. Holistic"
+      feature3="Corpus teórico TODH"
+      feature3b="Una visión incursiva del Misterio de la Creación."
+    />
 
     <Gallery msg="Artwork" />
 

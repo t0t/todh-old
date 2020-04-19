@@ -1,7 +1,5 @@
 <template>
   <footer class="Footer">
-    <img alt="Vue logo" src="@/assets/logo-todh-2.svg" />
-    <small>Sergio Forés</small>
     <SocialLinks />
   </footer>
 </template>

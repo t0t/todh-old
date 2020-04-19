@@ -1,6 +1,5 @@
 <template>
   <section class="Gallery">
-    <h1 class="GalleryTitle">{{ msg }}</h1>
     <img
       v-for="image in images"
       :src="image.src"
@@ -14,7 +13,6 @@
 export default {
   name: "Gallery",
   props: {
-    msg: String,
     images: {
       type: Array,
       default: () => [
@@ -55,13 +53,9 @@ export default {
 .Gallery {
   margin-bottom: $size / 2;
   padding: $size / 2;
-  background-color: $white;
-
-  &Title {
-    margin-top: 0;
-  }
+  background-color: $tertiary;
 }
 .Gallery img {
-  max-width: 300px;
+  max-width: 500px;
 }
 </style>

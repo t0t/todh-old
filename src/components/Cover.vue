@@ -2,7 +2,6 @@
   <section class="Cover" :style="{ backgroundImage: `url(${imgurl})` }">
     <h2 class="CoverTitle">{{ title }}</h2>
     <h3 class="CoverSubtitle">{{ subtitle }}</h3>
-    <p>Catálogo de obras impresas en 3D</p>
   </section>
 </template>
 
@@ -27,24 +26,27 @@ export default {
 @import "@/styles/main.scss";
 
 .Cover {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 50%;
   height: 100vh;
-  padding: $size / 2;
+  padding: 0 ($size / 2);
 }
 
 .CoverTitle {
-  margin-top: 100px;
-  text-align: left;
-  width: 75%;
+  margin: 0;
   color: $white;
-  font-size: 80px;
+  font-size: 5em;
 }
 
 .CoverSubtitle {
-  text-align: left;
-  width: 30%;
+  margin: 0;
+  padding: $size;
+  width: 40%;
   color: $white;
 }
 </style>

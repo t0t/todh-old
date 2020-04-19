@@ -1,27 +1,34 @@
 <template>
-  <section class="Features">
+  <aside class="Features">
     <img alt="Feature img" src="@/assets/grafico-1.svg" />
-    <h2 class="FeaturesTitle">{{ msg }}</h2>
     <dl class="FeaturesList">
-      <dt>Arte visual</dt>
-      <dd>Modelado/Impresión 3D</dd>
-      <dt>Prototipado rápido de Interfaces de usuario</dt>
-      <dd>Pr wefrefer f</dd>
-      <dd>ewf rwf wrf 4rfw4</dd>
-      <dd>Wef rrtretgr wrf 4rfw4</dd>
-      <dt>TODH</dt>
-      <dd>Percepción holística</dd>
-      <dd>Corpus filosófico</dd>
+      <div>
+        <dt>{{ feature1 }}</dt>
+        <dd>{{ feature1b }}</dd>
+      </div>
+      <div>
+        <dt>{{ feature2 }}</dt>
+        <dd>{{ feature2b }}</dd>
+      </div>
+      <div>
+        <dt>{{ feature3 }}</dt>
+        <dd>{{ feature3b }}</dd>
+      </div>
     </dl>
-  </section>
+  </aside>
 </template>
 
 <script>
 export default {
   name: "Features",
   props: {
-    msg: String,
-  },
+    feature1: String,
+    feature1b: String,
+    feature2: String,
+    feature2b: String,
+    feature3: String,
+    feature3b: String
+  }
 };
 </script>
 
@@ -33,12 +40,21 @@ export default {
   padding: $size / 2;
   display: block;
 
-  img {
-    max-height: 100px;
-  }
-
   &Title {
     width: 100%;
+  }
+
+  &List {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 20%;
+      flex-grow: 1;
+    }
+  }
+
+  img {
+    max-height: 100px;
   }
 }
 </style>

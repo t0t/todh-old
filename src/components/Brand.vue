@@ -1,8 +1,8 @@
 <template>
   <div class="Brand">
-    <a href="/" rel="">
+    <router-link to="/">
       <IcoLogo />
-    </a>
+    </router-link>
   </div>
 </template>
 
@@ -30,6 +30,10 @@ export default {
   align-items: center;
   margin: 0;
   color: $white;
+
+  a {
+    padding: $size / 4;
+  }
 
   & path.sentir {
     fill: $black_light;
