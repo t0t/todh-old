@@ -28,6 +28,9 @@
         rel="noopener"
         ><IconFacebook
       /></a>
+      <a href="https://unsplash.com/@todh" target="_blank" rel="noopener"
+        ><IconUnsplash
+      /></a>
     </li>
   </ul>
 </template>
@@ -38,6 +41,7 @@ import IconInstagram from "./icons/IconInstagram.vue";
 import IconMedium from "./icons/IconMedium.vue";
 import IconTwitter from "./icons/IconTwitter.vue";
 import IconGithub from "./icons/IconGithub.vue";
+import IconUnsplash from "./icons/IconUnsplash.vue";
 import IconFacebook from "./icons/IconFacebook.vue";
 
 export default {
@@ -48,8 +52,9 @@ export default {
     IconMedium,
     IconTwitter,
     IconGithub,
-    IconFacebook
-  }
+    IconFacebook,
+    IconUnsplash,
+  },
 };
 </script>
 
@@ -61,10 +66,18 @@ export default {
   padding: ($size / 8) 0;
   a {
     margin-right: 10px;
-    svg path {
-      fill: $dark-grey;
-      &:hover {
-        fill: $grey;
+    svg {
+      &path {
+        fill: $dark-grey;
+        &:hover {
+          fill: $grey;
+        }
+      }
+      &polygon {
+        fill: blue;
+      }
+      &rect {
+        fill: red;
       }
     }
   }

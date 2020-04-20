@@ -24,7 +24,7 @@
     />
 
     <Card
-      bgimg="logo-todh-2.svg"
+      bgimg="img4.jpg"
       title="When thoughts become things"
       subtitle="Desarrollo evolutivo desde el primer dia"
       text="Una visión holística y práctica del mundo del diseño de productos digitales a través de prototipos que evolucionan. Componentes reutilizables.  Haz de tu idea algo real. Orientado a pequeñas Startups con bajo presupuesto y mucha prisa."
