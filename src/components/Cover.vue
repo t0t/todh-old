@@ -15,7 +15,7 @@ export default {
   },
   computed: {
     imgurl() {
-      return require("../assets/" + this.bgimg + ".jpg");
+      return require("../assets/" + this.bgimg );
     }
   }
 };

@@ -1,16 +1,15 @@
 <template>
-  <div class="CardContainer" :style="{ backgroundImage: `url(${imgurl})` }">
+  <article class="CardContainer" :style="{ backgroundImage: `url(${imgurl})` }">
     <div class="CardContent">
-      <div class="CardHeader">
+      <header class="CardHeader">
         <h3>{{ title }}</h3>
         <h5>{{ subtitle }}</h5>
-      </div>
+      </header>
       <div class="CardBody">
         <p>{{ text }}</p>
       </div>
-      <div class="CardFooter"></div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -25,7 +24,7 @@ export default {
   },
   computed: {
     imgurl() {
-      return require("../assets/" + this.bgimg + ".jpg");
+      return require("../assets/" + this.bgimg);
     }
   }
 };

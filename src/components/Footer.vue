@@ -1,6 +1,6 @@
 <template>
   <footer class="Footer">
-    <SocialLinks />
+    <SocialLinks /> https://unsplash.com/@todh
   </footer>
 </template>
 

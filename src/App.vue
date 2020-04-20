@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <nav id="nav">
       <router-link to="/artwork">ARTWORK</router-link>
       <router-link to="/design">DESIGN</router-link>
       <router-link to="/info">Info</router-link>
-    </div>
+    </nav>
     <router-view />
   </div>
 </template>
