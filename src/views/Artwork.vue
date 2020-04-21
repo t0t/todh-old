@@ -1,6 +1,11 @@
 <template>
   <div class="artwork">
     <Brand />
+    <Cover
+      title="Sergio Forés"
+      subtitle="Holistic 3D-Printed Artwork & Hi-Res Web Prototyping"
+      bgimg="img1.jpg"
+    />
 
     <Gallery />
 
@@ -25,8 +30,10 @@
 
 <script>
 // @ is an alias to /src
+/* eslint-disable */
 import Brand from "@/components/Brand.vue";
 import Gallery from "@/components/Gallery.vue";
+import Cover from "@/components/Cover.vue";
 import BioExcerpt from "@/components/BioExcerpt.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -34,6 +41,7 @@ export default {
   name: "Artwork",
   components: {
     Brand,
+    Cover,
     Gallery,
     BioExcerpt,
     Footer

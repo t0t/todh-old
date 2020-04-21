@@ -1,12 +1,20 @@
 <template>
-  <section class="Gallery">
-    <img
-      v-for="(image, idx) in images"
-      :src="image.src"
-      :alt="image.text"
-      :key="idx"
-    />
-  </section>
+  <main class="Gallery">
+
+      <figure
+        class="GalleryItem"
+        v-for="(image, idx) in images"
+        :src="image.src"
+        :alt="image.titulo"
+        :key="idx"
+        :style="{ backgroundImage: `url(${image.src})` }"
+      >
+        <figcaption class="ItemCaption">
+          <h4 class="ItemCaptionTitle">{{ image.titulo }}</h4>
+          <small>{{ image.titulo }}</small>          
+        </figcaption>
+      </figure>
+  </main>
 </template>
 
 <script>
@@ -17,33 +25,41 @@ export default {
       type: Array,
       default: () => [
         {
-          src: "./gallery/img1.jpg",
-          text: "Img gallery 1"
+          src: "./gallery/image1.jpg",
+          titulo: "Img gallery 1"
         },
         {
-          src: "./gallery/img2.jpg",
-          text: "Img gallery 2"
+          src: "./gallery/image2.jpg",
+          titulo: "Img gallery 2"
         },
         {
-          src: "./gallery/img3.jpg",
-          text: "Img gallery 3"
+          src: "./gallery/image3.jpg",
+          titulo: "Img gallery 3"
         },
         {
-          src: "./gallery/img4.jpg",
-          text: "Img gallery 4"
+          src: "./gallery/image4.jpg",
+          titulo: "Img gallery 4"
         },
         {
-          src: "./gallery/img5.jpg",
-          text: "Img gallery 5"
+          src: "./gallery/image5.jpg",
+          titulo: "Img gallery 5"
         },
         {
-          src: "./gallery/img6.jpg",
-          text: "Img gallery 6"
+          src: "./gallery/image6.jpg",
+          titulo: "Img gallery 6"
+        },
+        {
+          src: "./gallery/image7.jpg",
+          titulo: "Img gallery 7"
+        },
+        {
+          src: "./gallery/image8.jpg",
+          titulo: "Img gallery 8"
         }
       ]
     }
   }
-};
+};/* eslint-disable */
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -52,15 +68,42 @@ export default {
 
 .Gallery {
   margin-bottom: $size / 2;
-  background-color: $tertiary;
-  @media (min-width: 1152px) {
-    padding: $size / 2;
+  padding: $size /4;
+
+  @media (min-width: 750px) {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row-reverse;
+    order: 2;
+    &:last-child {
+      order: 1;
+    }
+  }
+  &Item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-basis: 400px;
+    height: 300px;
+  }
+  figure {
+    margin: 0;
+    background-color: $tertiary;
+    background-size: cover;
   }
 }
-.Gallery img {
-  width: 100%;
-  @media (min-width: 900px) {
-    max-width: 500px;
+.ItemCaption {
+  background-color: $light_grey;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 20%;
+  padding: $size / 8;
+
+  &Title {
+    margin: 0;
+    padding-bottom: $size / 8;
   }
 }
 </style>
