@@ -1,5 +1,6 @@
 <template>
   <div class="Brand">
+    <Brand />
     <router-link to="/">
       <IcoLogo />
     </router-link>
@@ -22,26 +23,9 @@ export default {
 @import "@/styles/main.scss";
 
 .Brand {
+  // z-index: 2;
   position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0;
-  color: $white;
-
-  svg {
-    width: 60%;
-    @media (min-width: 1024px) {
-      width: 200px;
-      font-size: 5em;
-    }
-  }
-
-  a {
-    padding: $size / 4;
-  }
+  left: #{$h2}rem;
 
   & path.sentir {
     fill: $black_light;
@@ -53,6 +37,10 @@ export default {
   }
   & circle {
     fill: $secondary;
+  }
+  svg {
+    width: #{$h4}em;
+    height: #{$h4}em;
   }
 }
 </style>

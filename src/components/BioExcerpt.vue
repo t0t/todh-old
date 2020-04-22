@@ -22,16 +22,17 @@ export default {
 @import "@/styles/main.scss";
 
 .BioExcerpt {
-  padding: $size / 2;
+  // padding: $phi / 2;
 }
 
 @media (min-width: 900px) {
   .BioExcerpt div {
+    // background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 ($size * 2);
+    padding: 0 ($phi * 1em);
   }
 }
 </style>

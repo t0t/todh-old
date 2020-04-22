@@ -1,58 +1,158 @@
+@import "./_meyer-reset.scss";
 @import "./_variables.scss";
 
-// TODH Globals
-body {
-  background-color: $light_grey;
-  margin: 0;
-}
+// ****************************************
+// BASE RESPONSIVE
+// ****************************************
 
-section {
-  min-height: 50vh;
-}
+// Sizes "s" for Breakpoints
+$s1: 300px;
+$s2: 540px;
+$s3: 800px;
+$s4: 800px;
+$s5: 1240px;
+$s6: 2300px;
 
-a {
-  color: $secondary;
+/* Uso:
+@include media( s + scaling factor ) {
+  property: value;
 }
+*/
+@mixin media($media) {
+  @if $media == s0 {
+    @media ( max-width: $s1 ) { @content; }
+  }
+  @else if $media == s1 {
+    @media ( min-width: $s1 ) { @content; }
+  }
+  
+  @else if $media == s2 {
+    @media ( min-width: $s2 ) { @content; }
+  }
+  @else if $media == s3 {
+    @media ( min-width: $s3 ) { @content; }
+  }
+  @else if $media == s4 {
+    @media ( min-width: $s4 ) { @content; }
+  }
+  @else if $media == s5 {
+    @media ( min-width: $s5 ) { @content; }
+  }
+  @else if $media == s6 {
+    @media ( min-width: $s6 ) { @content; }
+  }
+} 
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  text-align: left;
+// ****************************************
+// BASE TYPOGRAPHY
+// ****************************************
+
+html {
+  font-size: $base_font_size;
 }
-
-dl {
-  // display: inherit;
+body { 
+  line-height: #{$h2}rem;
 }
-
-dt {
+h1,h2,h3,p,dl,ul,li {
+  line-height: $base_line_height; //122.966%
+}
+h1 { 
   font-weight: bold;
-  padding-top: $size / 3;
+  font-size: #{$h5}rem; 
+  margin: #{$h2}rem;
+  @include media(s0) { font-size: #{$h2}rem; }
+  @include media(s1) { font-size: #{$h3}rem; }
+  @include media(s2) { font-size: #{$h4}rem; }
+  @include media(s4) { font-size: #{$h5}rem; }
+  @include media(s5) { font-size: #{$h6}rem; }
+  @include media(s6) { font-size: #{$h7}rem; } 
 }
-
-dd {
-  margin-left: 0;
-  &:last-child {
-    padding-bottom: $size / 3;
+h2 { 
+  font-size: #{$h3}rem;
+  padding-bottom: #{$h2}rem;
+  @include media(s0) { font-size: #{$h2}rem; } 
+}
+h3 { 
+  font-size: #{$h2}rem;
+  padding-bottom: #{$h2}rem;
+  @include media(s0) {
+    font-weight: bold;
+    font-size: #{$h1}rem;
+  } 
+}
+h4,h5,h6 {
+  font-size: #{$h1}rem; 
+  padding-bottom: #{$h1}rem;
+  font-weight: bold;
+}
+p { 
+  font-size: #{$h1}rem; 
+  padding-bottom: #{$h2}rem;
+  @include media(s0) { 
+    font-size: #{$h0}rem; 
+    line-height: #{$h1}rem;
+  }
+  @include media(s1) { 
+    font-size: #{$h1}rem; 
+    line-height: #{$h2}rem;
+  }
+  @include media(s3) { 
+    font-size: #{$h2}rem; 
+    line-height: #{$h3}rem;
   }
 }
-
-img {
-  max-width: 100%;
+nav {
+  letter-spacing: 1px;
+  a {
+    text-decoration: none;
+  }
+}
+small { 
+  display: block;
+  font-size: #{$h2}rem; 
+  padding-bottom: #{$h2}rem;
+  line-height: #{$h1}rem;
+  @include media(s0) { 
+    font-size: #{$h0}rem; 
+  }
+  @include media(s1) { 
+    font-size: #{$h1}rem; 
+    line-height: #{$h2}rem;
+  }
+  @include media(s5) { 
+    font-size: #{$h2}rem; 
+    line-height: #{$h2}rem;
+  }
+  
 }
 
-h3 {
-  margin: 40px 0 0;
+// ****************************************
+// BASE SPACING
+// ****************************************
+section {
+  padding: #{$h2}rem #{$h2}rem 0;
+  // @include media(s0) { background-color: red; }
+  // @include media(s1) { background-color: pink; }
+  // @include media(s2) { background-color: white; }
+  // @include media(s3) { background-color: blue; }
+  // @include media(s4) { background-color: grey; }
+  // @include media(s5) { background-color: purple; }
+  // @include media(s6) { background-color: green; } 
+}
+article {
+  padding: #{$h2}rem #{$h2}rem 0;
+}
+footer {
+  background-color: #fff;
+  padding: #{$h2}rem #{$h2}rem 0;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+// ****************************************
+// AREAS | MARGINS... SPACES
+// ****************************************
 
-li {
-  display: inline-block;
-  margin: 0 10px;
+.golden-box {
+  height: 100px;
+  width: 100px * $phi;
+  // background-color: red;
 }

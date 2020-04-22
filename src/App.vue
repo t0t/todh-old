@@ -3,7 +3,7 @@
     <nav id="nav">
       <router-link to="/artwork">ARTWORK</router-link>
       <router-link to="/design">DESIGN</router-link>
-      <router-link to="/info">Info</router-link>
+      <router-link to="/info">INFO</router-link>
     </nav>
     <router-view />
   </div>
@@ -16,25 +16,28 @@
   font-family: $primary_font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 
-#nav {
-  padding: $size;
+#MainNav {
+  z-index: 1;
   position: fixed;
   right: 0;
-  z-index: 1;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: $grey;
+  @include media(s1) {
+  }
 
   a {
-    text-decoration: none;
+    // display: block;
     color: $white;
-    padding: ($size / 8) ($size / 7);
-    letter-spacing: 1px;
+    padding: #{$h-2}em #{$h-1}em;
+    background-color: $grey;
 
     &.router-link-exact-active {
       color: $tertiary;
-      background-color: $black_light;
-
+      background-color: $black;
       &:hover {
         cursor: default;
       }

@@ -53,8 +53,8 @@ export default {
     IconTwitter,
     IconGithub,
     IconFacebook,
-    IconUnsplash,
-  },
+    IconUnsplash
+  }
 };
 </script>
 

@@ -1,7 +1,8 @@
 <template>
   <section class="Cover" :style="{ backgroundImage: `url(${imgurl})` }">
-    <h2 class="CoverTitle">{{ title }}</h2>
-    <h3 class="CoverSubtitle">{{ subtitle }}</h3>
+    <div class="test"></div>
+    <h1 class="CoverTitle">{{ title }}</h1>
+    <h2 class="CoverSubtitle">{{ subtitle }}</h2>
   </section>
 </template>
 
@@ -15,7 +16,7 @@ export default {
   },
   computed: {
     imgurl() {
-      return require("../assets/" + this.bgimg );
+      return require("../assets/" + this.bgimg);
     }
   }
 };
@@ -27,7 +28,7 @@ export default {
 
 .Cover {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-size: cover;
@@ -40,13 +41,10 @@ export default {
 .CoverTitle {
   margin: 0;
   color: $white;
-  font-size: 3em;
-  
-  @media (min-width: 900px) {
-    font-size: 5em;
-  }
+  // @media (min-width: 900px) {
+  //   font-size: 5em;
+  // }
 }
-
 
 .CoverSubtitle {
   margin: 0;

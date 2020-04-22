@@ -3,7 +3,7 @@
     <Brand />
 
     <Cover
-      title="Modern Hi-Res Digital Prototyping Services"
+      title="Modern Hi-Res Web/App Prototyping Services"
       subtitle="Fast, Scalable"
       bgimg="grafico-2.svg"
     />

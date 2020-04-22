@@ -1,8 +1,40 @@
+// ****************************************
+// @TODH BASE VARIABLES
+// ****************************************
+
+$phi: 1.6180339887498948482;
+
+$base_font_size: 16.2px;
+$base_line_height: 122.966%;
+
+//Base proportions and scaling ratio
+$h13: 321.916;
+$h12: 198.959;
+$h11: 122.966;
+$h10: 75.999;
+$h9: 46.971;
+$h8: 29.03;
+$h7: 17.942;
+$h6: 11.089;
+$h5: 6.854;
+$h4: 4.236;
+$h3: 2.618;
+$h2: 1.618;
+$h1: 1; // 1.6180339887498948482px
+$h0: 0.618;
+$h-1: 0.382;
+$h-2: 0.236;
+$h-3: 0.146;
+$h-4: 0.09;
+
 // Fonts
 $primary_font: Avenir, Helvetica, Arial, sans-serif;
 
-// Sizes
-$size: 60px;
+// TYPOGRAPHY SIZES
+
+// AREA SIZES
+$base_font_size_phipx: 10px * $phi !default;
+$size: (100 * $phi) / 2;
 
 // Colors
 $white: #fff;

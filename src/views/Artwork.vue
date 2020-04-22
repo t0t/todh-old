@@ -2,8 +2,8 @@
   <div class="artwork">
     <Brand />
     <Cover
-      title="Sergio Forés"
-      subtitle="Holistic 3D-Printed Artwork & Hi-Res Web Prototyping"
+      title="Consciousness come down to the way things vibrate"
+      subtitle="Holistic 3D-Printed Artwork"
       bgimg="img1.jpg"
     />
 

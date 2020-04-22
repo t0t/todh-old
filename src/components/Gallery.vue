@@ -1,19 +1,18 @@
 <template>
   <main class="Gallery">
-
-      <figure
-        class="GalleryItem"
-        v-for="(image, idx) in images"
-        :src="image.src"
-        :alt="image.titulo"
-        :key="idx"
-        :style="{ backgroundImage: `url(${image.src})` }"
-      >
-        <figcaption class="ItemCaption">
-          <h4 class="ItemCaptionTitle">{{ image.titulo }}</h4>
-          <small>{{ image.titulo }}</small>          
-        </figcaption>
-      </figure>
+    <figure
+      class="GalleryItem"
+      v-for="(image, idx) in images"
+      :src="image.src"
+      :alt="image.titulo"
+      :key="idx"
+      :style="{ backgroundImage: `url(${image.src})` }"
+    >
+      <figcaption class="ItemCaption">
+        <h5 class="ItemCaptionTitle">{{ image.titulo }}</h5>
+        <small>{{ image.titulo }}</small>
+      </figcaption>
+    </figure>
   </main>
 </template>
 

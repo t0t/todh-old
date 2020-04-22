@@ -2,7 +2,7 @@
   <article class="CardContainer" :style="{ backgroundImage: `url(${imgurl})` }">
     <div class="CardContent">
       <header class="CardHeader">
-        <h3>{{ title }}</h3>
+        <h4>{{ title }}</h4>
         <h5>{{ subtitle }}</h5>
       </header>
       <div class="CardBody">
@@ -35,26 +35,30 @@ export default {
 @import "@/styles/main.scss";
 
 .CardContainer {
-  background-size: 200%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: $grey;
-  min-height: 300px;
+  @include media(s1) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  p {
+    padding-bottom: 0;
+  }
+  // padding-right: #{$h3}em;
 }
 .CardContent {
-  padding: $size / 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  background-color: $tertiary;
-  h3,
-  h5 {
-    margin: 0;
-  }
-  @media (min-width: 900px) {
-    padding: $size;
-    // height: 250px;
+  padding: #{$h1}rem;
+  background-color: $white;
+  @include media(s1) {
+    // padding-left: #{$h3}em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // font-size: #{$h2}rem;
+    line-height: #{$h3}rem;
   }
 }
 </style>
