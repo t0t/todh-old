@@ -25,3 +25,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import "@/styles/main.scss";
+
+.home .Cover {
+  height: 100vh;
+  flex-wrap: nowrap;
+}
+</style>

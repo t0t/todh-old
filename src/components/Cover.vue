@@ -1,6 +1,5 @@
 <template>
   <section class="Cover" :style="{ backgroundImage: `url(${imgurl})` }">
-    <div class="test"></div>
     <h1 class="CoverTitle">{{ title }}</h1>
     <h2 class="CoverSubtitle">{{ subtitle }}</h2>
   </section>
@@ -33,22 +32,17 @@ export default {
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 30% 50%;
-  height: 100vh;
-  padding: 0 ($size / 2);
+  background-position: left 50%;
+  color: $white;
+  background-color: $primary;
 }
 
 .CoverTitle {
-  margin: 0;
-  color: $white;
   // @media (min-width: 900px) {
   //   font-size: 5em;
   // }
 }
 
 .CoverSubtitle {
-  margin: 0;
-  padding: $size / 2;
-  color: $white;
 }
 </style>

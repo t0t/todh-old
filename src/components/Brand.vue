@@ -1,6 +1,5 @@
 <template>
   <div class="Brand">
-    <Brand />
     <router-link to="/">
       <IcoLogo />
     </router-link>
@@ -23,9 +22,12 @@ export default {
 @import "@/styles/main.scss";
 
 .Brand {
-  // z-index: 2;
+  z-index: 2;
   position: fixed;
   left: #{$h2}rem;
+  @include media(s1) {
+    background-color: #fff;
+  }
 
   & path.sentir {
     fill: $black_light;

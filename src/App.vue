@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav id="nav">
+    <nav id="MainNav">
       <router-link to="/artwork">ARTWORK</router-link>
       <router-link to="/design">DESIGN</router-link>
       <router-link to="/info">INFO</router-link>

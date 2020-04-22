@@ -20,28 +20,35 @@ $s6: 2300px;
 */
 @mixin media($media) {
   @if $media == s0 {
-    @media ( max-width: $s1 ) { @content; }
+    @media (max-width: $s1) {
+      @content;
+    }
+  } @else if $media == s1 {
+    @media (min-width: $s1) {
+      @content;
+    }
+  } @else if $media == s2 {
+    @media (min-width: $s2) {
+      @content;
+    }
+  } @else if $media == s3 {
+    @media (min-width: $s3) {
+      @content;
+    }
+  } @else if $media == s4 {
+    @media (min-width: $s4) {
+      @content;
+    }
+  } @else if $media == s5 {
+    @media (min-width: $s5) {
+      @content;
+    }
+  } @else if $media == s6 {
+    @media (min-width: $s6) {
+      @content;
+    }
   }
-  @else if $media == s1 {
-    @media ( min-width: $s1 ) { @content; }
-  }
-  
-  @else if $media == s2 {
-    @media ( min-width: $s2 ) { @content; }
-  }
-  @else if $media == s3 {
-    @media ( min-width: $s3 ) { @content; }
-  }
-  @else if $media == s4 {
-    @media ( min-width: $s4 ) { @content; }
-  }
-  @else if $media == s5 {
-    @media ( min-width: $s5 ) { @content; }
-  }
-  @else if $media == s6 {
-    @media ( min-width: $s6 ) { @content; }
-  }
-} 
+}
 
 // ****************************************
 // BASE TYPOGRAPHY
@@ -50,54 +57,76 @@ $s6: 2300px;
 html {
   font-size: $base_font_size;
 }
-body { 
-  line-height: #{$h2}rem;
+body {
+  // line-height: #{$h2}rem;
 }
-h1,h2,h3,p,dl,ul,li {
+h1,
+h2,
+h3,
+p,
+dl,
+ul {
   line-height: $base_line_height; //122.966%
 }
-h1 { 
+h1 {
   font-weight: bold;
-  font-size: #{$h5}rem; 
+  font-size: #{$h5}rem;
   margin: #{$h2}rem;
-  @include media(s0) { font-size: #{$h2}rem; }
-  @include media(s1) { font-size: #{$h3}rem; }
-  @include media(s2) { font-size: #{$h4}rem; }
-  @include media(s4) { font-size: #{$h5}rem; }
-  @include media(s5) { font-size: #{$h6}rem; }
-  @include media(s6) { font-size: #{$h7}rem; } 
+  @include media(s0) {
+    font-size: #{$h2}rem;
+  }
+  @include media(s1) {
+    font-size: #{$h3}rem;
+  }
+  @include media(s2) {
+    font-size: #{$h4}rem;
+  }
+  @include media(s4) {
+    font-size: #{$h5}rem;
+  }
+  @include media(s5) {
+    font-size: #{$h6}rem;
+  }
+  @include media(s6) {
+    font-size: #{$h7}rem;
+  }
 }
-h2 { 
+h2 {
   font-size: #{$h3}rem;
   padding-bottom: #{$h2}rem;
-  @include media(s0) { font-size: #{$h2}rem; } 
+  @include media(s0) {
+    font-size: #{$h2}rem;
+  }
 }
-h3 { 
+h3 {
   font-size: #{$h2}rem;
   padding-bottom: #{$h2}rem;
   @include media(s0) {
     font-weight: bold;
     font-size: #{$h1}rem;
-  } 
+  }
 }
-h4,h5,h6 {
-  font-size: #{$h1}rem; 
+h4,
+h5,
+h6 {
+  font-size: #{$h1}rem;
   padding-bottom: #{$h1}rem;
   font-weight: bold;
+  line-height: #{$h2}rem;
 }
-p { 
-  font-size: #{$h1}rem; 
+p {
+  font-size: #{$h1}rem;
   padding-bottom: #{$h2}rem;
-  @include media(s0) { 
-    font-size: #{$h0}rem; 
+  @include media(s0) {
+    font-size: #{$h0}rem;
     line-height: #{$h1}rem;
   }
-  @include media(s1) { 
-    font-size: #{$h1}rem; 
+  @include media(s1) {
+    font-size: #{$h1}rem;
     line-height: #{$h2}rem;
   }
-  @include media(s3) { 
-    font-size: #{$h2}rem; 
+  @include media(s3) {
+    font-size: #{$h2}rem;
     line-height: #{$h3}rem;
   }
 }
@@ -107,23 +136,22 @@ nav {
     text-decoration: none;
   }
 }
-small { 
+small {
   display: block;
-  font-size: #{$h2}rem; 
+  font-size: #{$h2}rem;
   padding-bottom: #{$h2}rem;
   line-height: #{$h1}rem;
-  @include media(s0) { 
-    font-size: #{$h0}rem; 
+  @include media(s0) {
+    font-size: #{$h0}rem;
   }
-  @include media(s1) { 
-    font-size: #{$h1}rem; 
+  @include media(s1) {
+    font-size: #{$h1}rem;
     line-height: #{$h2}rem;
   }
-  @include media(s5) { 
-    font-size: #{$h2}rem; 
+  @include media(s5) {
+    font-size: #{$h2}rem;
     line-height: #{$h2}rem;
   }
-  
 }
 
 // ****************************************
@@ -137,14 +165,14 @@ section {
   // @include media(s3) { background-color: blue; }
   // @include media(s4) { background-color: grey; }
   // @include media(s5) { background-color: purple; }
-  // @include media(s6) { background-color: green; } 
+  // @include media(s6) { background-color: green; }
 }
 article {
   padding: #{$h2}rem #{$h2}rem 0;
 }
 footer {
   background-color: #fff;
-  padding: #{$h2}rem #{$h2}rem 0;
+  padding: #{$h2}rem;
 }
 
 // ****************************************
