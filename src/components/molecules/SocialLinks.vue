@@ -63,6 +63,7 @@ export default {
 @import "@/styles/main.scss";
 
 .SocialLinks {
+  padding-bottom: 0;
   a {
     margin-right: #{$h0}rem;
     @include media(s1) {

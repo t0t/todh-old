@@ -5,13 +5,21 @@
 // BASE RESPONSIVE
 // ****************************************
 
-// Sizes "s" for Breakpoints
+// Breakpoints
 $s1: 300px;
 $s2: 540px;
 $s3: 800px;
 $s4: 970px;
 $s5: 1240px;
 $s6: 2300px;
+
+// Sizes
+$sp1: #{$h2}rem;
+$sp2: 540px;
+$sp3: 800px;
+$sp4: 970px;
+$sp5: 1240px;
+$sp6: 2300px;
 
 /* Uso:
 @include media( s + scaling factor ) {
@@ -67,11 +75,11 @@ h3,
 h4,
 p,
 dl,
-ul,
+li,
 strong,
 blockquote,
 address {
-  line-height: $base_line_height; //122.966%
+  line-height: $base_line_height;
 }
 h1 {
   font-weight: bold;
@@ -109,6 +117,7 @@ h3 {
   font-weight: bold;
   @include media(s1) {
     font-size: #{$h2}rem;
+    line-height: #{$h3}rem;
   }
   @include media(s2) {
     font-size: #{$h2}rem;
@@ -129,12 +138,14 @@ h4 {
   font-style: italic;
   @include media(s1) {
     font-size: #{$h2}rem;
+    line-height: #{$h3}rem;
   }
   @include media(s2) {
     margin-left: #{$h4}rem;
     padding-right: #{$h4}rem;
   }
   @include media(s3) {
+    line-height: #{$h4}rem;
     font-size: #{$h3}rem;
     max-width: $s3;
   }
@@ -177,6 +188,7 @@ p {
     margin-left: #{$h5}em;
   }
 }
+
 nav {
   letter-spacing: 1px;
   a {
@@ -205,6 +217,34 @@ small {
   }
 }
 // Lists
+ul {
+  display: block;
+  width: #{$h8}rem;
+  padding-bottom: #{$h2}rem;
+  padding-left: #{$h2}rem;  
+  @include media(s1) {
+    margin-left: #{$h6}em;
+  }
+}
+li {
+  font-size: #{$h1}rem;
+  line-height: #{$h1}rem;
+  @include media(s0) {
+    font-size: #{$h0}rem;
+  }
+  @include media(s1) {
+    line-height: #{$h2}rem;
+    font-size: #{$h1}rem;
+  }
+  @include media(s2) {
+    line-height: #{$h3}rem;
+  }
+  @include media(s3) {
+    font-size: #{$h2}rem;
+  }
+  @include media(s4) {
+  }
+}
 dl {
   @include media(s2) {
     font-size: #{$h0}rem;
@@ -242,9 +282,6 @@ blockquote {
 // LAYOUT | MARGINS... SPACES
 // ****************************************
 
-section {
-  padding: #{$h2}rem #{$h2}rem 0;
-}
 article {
   padding: #{$h2}rem #{$h2}rem 0;
 }

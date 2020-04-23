@@ -67,10 +67,7 @@ export default {
   }
 }
 .CardBody {
-  padding-top: #{$h2}rem;
-  padding-left: #{$h2}rem;
-  padding-right: #{$h2}rem;
-  padding-bottom: #{$h2}rem;
+  padding: #{$h2}rem;
   @include media(s5) {
     padding-bottom: #{$h4}rem;
   }

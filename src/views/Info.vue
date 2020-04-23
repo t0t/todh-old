@@ -34,39 +34,25 @@
         defendiendo el desarrollo de la mente abstracta frente al de la mente
         concreta."
     />
-    <h3>Formato</h3>
-    <p>
-      <a href="#">Lorem ipsum dolor sit amet</a>
-      <strong> consectetur</strong>
-      adipisicing elit. <i>Delectus</i> This is <sup>superscripted</sup> text. a
-      nulla, asperiores <mark>marked</mark> cupiditate ullam tempora
-      <del>blue</del>? Delectus facilis reiciendis incidunt! Harum repudiandae
-      repellat <em>This text is emphasized.</em>
-    </p>
-    <blockquote cite="#url">
-      For nearly 60 years, WWF has been protecting the future of nature. The
-      world's leading conservation organization, WWF works in 100 countries and
-      is supported by more than one million members in the United States and
-      close to five million globally.
-    </blockquote>
-    <address>
-      Written by John Doe.<br />
-      Visit us at:<br />
-      Example.com<br />
-      Box 564, Disneyland<br />
-      USA
-    </address>
-    <p>
-      The <abbr title="World Health Organization">WHO</abbr> was founded in
-      1948.
-    </p>
-    <img src="img_the_scream.jpg" width="220" height="277" alt="The Scream" />
-    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-    <ul>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
+    <section class="content">
+      <h3>Formato</h3>
+      <p>
+        <a href="#">Lorem ipsum dolor sit amet</a>
+        <strong> consectetur</strong>
+        adipisicing elit. <i>Delectus</i> This is <sup>superscripted</sup> text.
+        a nulla, asperiores <mark>marked</mark> cupiditate ullam tempora
+        <del>blue</del>? Delectus facilis reiciendis incidunt! Harum repudiandae
+        repellat <em>This text is emphasized.</em>
+      </p>
+
+      <ul style="list-style-type:circle;">
+        <li>Elemento de l ista 1</li>
+        <li>Elemento uhg iuyg uiyg oiuyi</li>
+        <li>Elemento de un lista</li>
+        <li>Elemento de l ista 1</li>
+        <li>Elemento de l ista 1</li>
+      </ul>
+    </section>
 
     <Card
       bgimg="img6.jpg"
