@@ -33,13 +33,23 @@ export default {
   align-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left 50%;
+  background-position: top;
   color: $white;
   background-color: $primary;
-  height: 75vh;
+  height: 50vh;
   text-align: center;
+  @include media(s1) {
+    height: 75vh;
+  }
+  @include media(s2) {
+    height: 100vh;
+    background-position: left;
+  }
 }
 
+.CoverTitle {
+  margin: 0;
+}
 .CoverSubtitle {
   padding: #{$h2}rem;
 }

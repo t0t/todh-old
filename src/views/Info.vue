@@ -3,13 +3,13 @@
     <Brand />
 
     <Cover
-      title="Observar. Discernir. Hacer. Transmitir."
-      subtitle="T-O-D-H"
+      title="T-O-D-H"
+      subtitle="Observar. Discernir. Hacer. Transmitir."
       bgimg="img2.jpg"
     />
 
     <Card
-      bgimg="img4.jpg"
+      bgimg="img7.jpg"
       title="Sergio Forés es Diseñador Gráfico/Frontend especializado en desarrollo
         de prototipos evolutivos en alta resolución. Trabaja en remoto y,
         paralelamente, desarrolla su actividad como artista multidisciplinar."
@@ -25,7 +25,7 @@
         concreta."
     />
     <Card
-      bgimg="img4.jpg"
+      bgimg="img6.jpg"
       title="La raíz profunda de la Creación es el orden y sentirlo nos reconecta dando forma a la conexión de todo cuanto existe."
       subtitle="#sentirordenformaconexion"
       text="Así, orbitando varios mundos como son la tecnología, el arte y la

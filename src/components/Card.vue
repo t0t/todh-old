@@ -3,7 +3,7 @@
     <div class="CardContent">
       <header class="CardHeader">
         <h4>{{ title }}</h4>
-        <h5>{{ subtitle }}</h5>
+        <small>{{ subtitle }}</small>
       </header>
       <div class="CardBody">
         <p>{{ text }}</p>
@@ -46,16 +46,20 @@ export default {
   p {
     padding-bottom: 0;
   }
+  small {
+    font-style: italic;
+  }
 }
 .CardContent {
   padding: #{$h1}rem;
   background-color: $white;
   @include media(s1) {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     line-height: #{$h3}rem;
+  }
+  @include media(s4) {
+    padding: #{$h3}rem;
   }
 }
 </style>

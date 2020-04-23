@@ -63,6 +63,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p,
 dl,
 ul {
@@ -112,7 +113,11 @@ h6 {
   font-size: #{$h1}rem;
   padding-bottom: #{$h1}rem;
   font-weight: bold;
-  line-height: #{$h2}rem;
+  // line-height: #{$h2}rem;
+  @include media(s4) {
+    font-weight: inherit;
+    font-size: #{$h3}rem;
+  }
 }
 p {
   font-size: #{$h1}rem;

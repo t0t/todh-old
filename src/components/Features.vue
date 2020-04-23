@@ -1,20 +1,20 @@
 <template>
   <aside class="Features">
-    <img alt="Feature img" src="@/assets/grafico-1.svg" />
-    <dl class="FeaturesList">
-      <div>
+    <div class="FeaturesList">
+      <dl>
         <dt>{{ feature1 }}</dt>
         <dd>{{ feature1b }}</dd>
-      </div>
-      <div>
+      </dl>
+      <dl>
         <dt>{{ feature2 }}</dt>
         <dd>{{ feature2b }}</dd>
-      </div>
-      <div>
+      </dl>
+      <dl>
         <dt>{{ feature3 }}</dt>
         <dd>{{ feature3b }}</dd>
-      </div>
-    </dl>
+      </dl>
+    </div>
+    <img alt="Feature img" src="@/assets/grafico-1.svg" />
   </aside>
 </template>
 
@@ -37,24 +37,43 @@ export default {
 @import "@/styles/main.scss";
 
 .Features {
-  padding: $size / 2;
+  padding: #{$h2}rem #{$h2}rem 0 #{$h2}rem;
   display: block;
-
   &Title {
     width: 100%;
   }
-
   &List {
-    display: flex;
-    justify-content: space-between;
-    div {
-      width: 20%;
-      flex-grow: 1;
+    // padding: #{$h-1}rem;
+    @include media(s2) {
+      display: flex;
+      justify-content: space-between;
+    }
+    dl {
+      margin-bottom: #{$h-2}rem;
+      @include media(s0) {
+        font-size: #{$h1}rem;
+      }
+      @include media(s1) {
+        padding: #{$h-1}rem;
+      }
+      @include media(s2) {
+        flex-grow: 1;
+        max-width: 29.03%;
+        background-color: $tertiary;
+        padding: #{$h0}rem;
+      }
+      @include media(s4) {
+        padding: #{$h3}rem;
+        font-size: #{$h2}rem;
+      }
     }
   }
-
   img {
-    max-height: 100px;
+    max-height: #{$h5}rem;
+    margin-top: #{$h1}rem;
+    @include media(s4) {
+      max-height: #{$h6}rem;
+    }
   }
 }
 </style>

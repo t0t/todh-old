@@ -3,7 +3,7 @@
     <Brand />
 
     <Cover
-      title="Modern Frontend Design"
+      title="Holistic Frontend-Design"
       subtitle="Me apasiona crear prototipos web que funcionan"
       bgimg="grafico-2.svg"
     />

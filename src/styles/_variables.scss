@@ -41,10 +41,10 @@ $white: #fff;
 $black: #000;
 $black_light: #2d2d2d;
 
-$primary: $black_light;
-$secondary: #4a2e26;
-$tertiary: #c5cbb4;
-
 $light_grey: #cfcfcf;
 $grey: #555;
 $dark_grey: #777;
+
+$primary: $black_light;
+$secondary: #4a2e26;
+$tertiary: $light_grey;
