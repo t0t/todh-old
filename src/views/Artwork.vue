@@ -2,13 +2,11 @@
   <div class="artwork">
     <Brand />
     <Cover
-      title="Consciousness come down to the way things vibrate"
-      subtitle="Holistic 3D-Printed Artwork"
+      title="Consciousness come down"
+      subtitle="to the way things vibrate"
       bgimg="img1.jpg"
     />
-
     <Gallery />
-
     <BioExcerpt
       texto1="Sergio Forés es Diseñador Gráfico/Frontend especializado en desarrollo
         de prototipos evolutivos en alta resolución. Trabaja en remoto y,
@@ -23,13 +21,11 @@
         defendiendo el desarrollo de la mente abstracta frente al de la mente
         concreta."
     />
-
     <Footer />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 /* eslint-disable */
 import Brand from "@/components/Brand.vue";
 import Gallery from "@/components/Gallery.vue";

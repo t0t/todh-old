@@ -1,10 +1,9 @@
 <template>
   <div class="home">
     <Brand />
-
     <Cover
       title="Sergio Forés"
-      subtitle="Holistic 3D-Printed Artwork - Hi-Res Web Prototyping"
+      subtitle="Original 3D-printed Artwork & Modern prototyping for the web"
       bgimg="img4.jpg"
     />
     <Footer />
@@ -31,6 +30,6 @@ export default {
 
 .home .Cover {
   height: 100vh;
-  flex-wrap: nowrap;
+  // flex-wrap: nowrap;
 }
 </style>

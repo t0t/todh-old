@@ -9,8 +9,7 @@
       :style="{ backgroundImage: `url(${image.src})` }"
     >
       <figcaption class="ItemCaption">
-        <h5 class="ItemCaptionTitle">{{ image.titulo }}</h5>
-        <small>{{ image.titulo }}</small>
+        <small class="ItemCaptionTitle">{{ image.titulo }}</small>
       </figcaption>
     </figure>
   </main>
@@ -25,35 +24,35 @@ export default {
       default: () => [
         {
           src: "./gallery/image1.jpg",
-          titulo: "Img gallery 1"
+          titulo: "091120"
         },
         {
           src: "./gallery/image2.jpg",
-          titulo: "Img gallery 2"
+          titulo: "240520"
         },
         {
           src: "./gallery/image3.jpg",
-          titulo: "Img gallery 3"
+          titulo: "191120"
         },
         {
           src: "./gallery/image4.jpg",
-          titulo: "Img gallery 4"
+          titulo: "011120"
         },
         {
           src: "./gallery/image5.jpg",
-          titulo: "Img gallery 5"
+          titulo: "011120"
         },
         {
           src: "./gallery/image6.jpg",
-          titulo: "Img gallery 6"
+          titulo: "041120"
         },
         {
           src: "./gallery/image7.jpg",
-          titulo: "Img gallery 7"
+          titulo: "011120"
         },
         {
           src: "./gallery/image8.jpg",
-          titulo: "Img gallery 8"
+          titulo: "231120"
         }
       ]
     }
@@ -66,10 +65,8 @@ export default {
 @import "@/styles/main.scss";
 
 .Gallery {
-  margin-bottom: $size / 2;
-  padding: $size /4;
-
-  @media (min-width: 750px) {
+  padding: #{$h2}rem;
+  @include media(s3) {
     display: flex;
     flex-flow: wrap;
     flex-direction: row-reverse;
@@ -84,25 +81,22 @@ export default {
     justify-content: flex-end;
     flex-grow: 1;
     flex-basis: 400px;
-    height: 300px;
+    height: #{$h7}rem;
   }
-  figure {
-    margin: 0;
+  figure { //bg
     background-color: $tertiary;
     background-size: cover;
   }
 }
 .ItemCaption {
+  text-align: center;
+  width: #{$h4}rem;
+  padding-top: #{$h0}rem;
+  padding-left: #{$h0}rem;
+  padding-right: #{$h0}rem;
   background-color: $light_grey;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 20%;
-  padding: $size / 8;
-
   &Title {
-    margin: 0;
-    padding-bottom: $size / 8;
+    padding-bottom: #{$h0}rem;
   }
 }
 </style>

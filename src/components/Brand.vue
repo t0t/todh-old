@@ -22,15 +22,16 @@ export default {
 @import "@/styles/main.scss";
 
 .Brand {
-  z-index: 2;
   position: fixed;
+  top: #{$h2}rem;
   left: #{$h2}rem;
-  @include media(s1) {
-    background-color: #fff;
+  z-index: 0;
+  @include media(s2) {
+    z-index: 2;
+    background-color: alpha($color: white);
   }
-
   & path.sentir {
-    fill: $black_light;
+    fill: $white;
     stroke: none;
   }
   & path.hacer {

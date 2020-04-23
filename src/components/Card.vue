@@ -46,18 +46,15 @@ export default {
   p {
     padding-bottom: 0;
   }
-  // padding-right: #{$h3}em;
 }
 .CardContent {
   padding: #{$h1}rem;
   background-color: $white;
   @include media(s1) {
-    // padding-left: #{$h3}em;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // font-size: #{$h2}rem;
     line-height: #{$h3}rem;
   }
 }

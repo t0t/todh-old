@@ -63,21 +63,15 @@ export default {
 @import "@/styles/main.scss";
 
 .SocialLinks {
-  padding: ($size / 8) 0;
   a {
-    margin-right: 10px;
+    margin-right: #{$h2}rem;
     svg {
-      &path {
-        fill: $dark-grey;
+      width: #{$h2}rem;
+      path, rect, polygon {
+        fill: $primary;
         &:hover {
           fill: $grey;
         }
-      }
-      &polygon {
-        fill: blue;
-      }
-      &rect {
-        fill: red;
       }
     }
   }

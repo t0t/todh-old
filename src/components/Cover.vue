@@ -30,19 +30,18 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 50%;
   color: $white;
   background-color: $primary;
-}
-
-.CoverTitle {
-  // @media (min-width: 900px) {
-  //   font-size: 5em;
-  // }
+  height: 75vh;
+  text-align: center;
 }
 
 .CoverSubtitle {
+  padding: #{$h2}rem;
 }
+
 </style>

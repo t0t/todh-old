@@ -3,8 +3,8 @@
     <Brand />
 
     <Cover
-      title="Modern Hi-Res Web/App Prototyping Services"
-      subtitle="Fast, Scalable"
+      title="Modern Frontend Design"
+      subtitle="Me apasiona crear prototipos web que funcionan"
       bgimg="grafico-2.svg"
     />
 

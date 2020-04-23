@@ -1,9 +1,7 @@
 <template>
   <section class="BioExcerpt">
-    <div>
-      <h3>{{ texto1 }}</h3>
-      <p>{{ texto2 }}</p>
-    </div>
+    <h3>{{ texto1 }}</h3>
+    <p>{{ texto2 }}</p>
   </section>
 </template>
 
@@ -22,17 +20,15 @@ export default {
 @import "@/styles/main.scss";
 
 .BioExcerpt {
-  // padding: $phi / 2;
-}
-
-@media (min-width: 900px) {
-  .BioExcerpt div {
-    // background-color: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 ($phi * 1em);
+  max-width: 75%;
+  @include media(s4) {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  h3 {
+    @include media(s4) {
+      font-size: #{$h3}rem;
+    }
   }
 }
 </style>

@@ -25,10 +25,5 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: $size / 2;
-}
-.Footer img {
-  max-width: 20px;
-  margin-right: $size / 4;
 }
 </style>

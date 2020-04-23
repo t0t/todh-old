@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <nav id="MainNav">
-      <router-link to="/artwork">ARTWORK</router-link>
-      <router-link to="/design">DESIGN</router-link>
-      <router-link to="/info">INFO</router-link>
+      <router-link to="/artwork">Artwork</router-link>
+      <router-link to="/design">Prototyping</router-link>
+      <router-link to="/info">TODH</router-link>
     </nav>
     <router-view />
   </div>
@@ -22,19 +22,30 @@
   z-index: 1;
   position: fixed;
   right: 0;
-  left: 0;
+  top: 0;
   display: flex;
   justify-content: flex-end;
-  background-color: $grey;
   @include media(s1) {
+    top: #{$h2}rem;
+    right: #{$h2}rem;
   }
-
   a {
-    // display: block;
     color: $white;
-    padding: #{$h-2}em #{$h-1}em;
-    background-color: $grey;
-
+    padding: #{$h0}em;
+    @include media(s1) {
+      padding: #{$h0}em;
+      background-color: $secondary;
+      font-size: #{$h1}rem;
+    }
+    @include media(s2) {
+      display: block;
+      padding: #{$h1}em;
+      background-color: transparent;
+      font-size: #{$h2}rem;
+      &:hover {
+        background-color: $secondary;
+      }
+    }
     &.router-link-exact-active {
       color: $tertiary;
       background-color: $black;
