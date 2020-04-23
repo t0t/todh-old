@@ -103,6 +103,9 @@ h3 {
   font-size: #{$h1}rem;
   padding-bottom: #{$h1}rem;
   font-weight: bold;
+  @include media(s1) {
+    font-size: #{$h2}rem;
+  }
   @include media(s2) {
     font-size: #{$h2}rem;
     font-weight: inherit;
@@ -117,9 +120,12 @@ h3 {
   }
 }
 h4 {
-  font-size: #{$h2}rem;
+  font-size: #{$h1}rem;
   color: $secondary;
   font-style: italic;
+  @include media(s1) {
+    font-size: #{$h2}rem;
+  }
   @include media(s2) {
     margin-left: #{$h4}rem;
     padding-right: #{$h4}rem;
@@ -197,6 +203,20 @@ small {
 }
 // Lists
 dl {
+  @include media(s2) {
+    font-size: #{$h0}rem;
+    line-height: #{$h1}rem;
+  }
+  @include media(s3) {
+    font-size: #{$h1}rem;
+    line-height: #{$h2}rem;
+  }
+  @include media(s4) {
+    font-size: #{$h2}rem;
+    line-height: #{$h3}rem;
+  }
+  @include media(s5) {
+  }
 }
 dt {
   font-weight: bold;

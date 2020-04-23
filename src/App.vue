@@ -41,10 +41,13 @@
       display: block;
       padding: #{$h1}em;
       background-color: transparent;
-      font-size: #{$h2}rem;
+      font-size: #{$h1}rem;
       &:hover {
         background-color: $secondary;
       }
+    }
+    @include media(s4) {
+      font-size: #{$h2}rem;
     }
     &.router-link-exact-active {
       color: $tertiary;

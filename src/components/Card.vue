@@ -1,6 +1,10 @@
 <template>
-  <article class="CardContainer" :style="{ backgroundImage: `url(${imgurl})` }">
+  <article class="CardContainer">
     <div class="CardContent">
+      <div
+        class="CardImage"
+        :style="{ backgroundImage: `url(${imgurl})` }"
+      ></div>
       <header class="CardHeader">
         <h4>{{ title }}</h4>
         <small>{{ subtitle }}</small>
@@ -20,13 +24,13 @@ export default {
     bgimg: String,
     title: String,
     subtitle: String,
-    text: String
+    text: String,
   },
   computed: {
     imgurl() {
       return require("../assets/" + this.bgimg);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -35,30 +39,49 @@ export default {
 @import "@/styles/main.scss";
 
 .CardContainer {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   color: $grey;
-  @include media(s1) {
-    display: flex;
-    justify-content: flex-end;
-  }
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
   p {
     padding-bottom: 0;
   }
   small {
     font-style: italic;
     color: $secondary;
+    padding-bottom: 0;
   }
 }
 .CardContent {
   background-color: $light_grey;
   @include media(s1) {
-    margin-top: #{$h7}rem;
-    padding-top: #{$h3}rem;
-    padding-bottom: #{$h3}rem;
+    // padding-bottom: #{$h3}rem;
   }
-  @include media(s4) {
+}
+.CardHeader {
+  padding-top: #{$h2}rem;
+  padding-left: #{$h2}rem;
+  padding-right: #{$h2}rem;
+  @include media(s5) {
+    padding-top: #{$h4}rem;
+  }
+}
+.CardBody {
+  padding-top: #{$h2}rem;
+  padding-left: #{$h2}rem;
+  padding-right: #{$h2}rem;
+  padding-bottom: #{$h2}rem;
+  @include media(s5) {
+    padding-bottom: #{$h4}rem;
+  }
+}
+.CardImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: #{$h6}em;
+  @include media(s5) {
+    height: #{$h8}em;
   }
 }
 </style>

@@ -61,17 +61,19 @@ export default {
         font-size: #{$h1}rem;
       }
       @include media(s1) {
-        padding: #{$h-1}rem;
+        padding: #{$h1}rem;
+        text-align: center;
       }
       @include media(s2) {
         flex-grow: 1;
-        max-width: 29.03%;
+        max-width: #{$h7}em;
         background-color: $tertiary;
-        padding: #{$h0}rem;
       }
       @include media(s4) {
         padding: #{$h3}rem;
-        font-size: #{$h2}rem;
+      }
+      @include media(s5) {
+        padding: #{$h3}rem;
       }
     }
   }

@@ -64,9 +64,16 @@ export default {
 
 .SocialLinks {
   a {
-    margin-right: #{$h2}rem;
+    margin-right: #{$h0}rem;
+    @include media(s1) {
+      margin-right: #{$h2}rem;
+        width: #{$h1}rem;
+      }
     svg {
       width: #{$h2}rem;
+      @include media(s0) {
+        width: #{$h1}rem;
+      }
       path, rect, polygon {
         fill: $primary;
         &:hover {
