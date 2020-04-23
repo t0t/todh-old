@@ -102,7 +102,7 @@ export default {
     Brand,
     BioExcerpt,
     Card,
-    Footer,
-  },
+    Footer
+  }
 };
 </script>

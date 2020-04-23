@@ -52,7 +52,5 @@ export default {
 }
 .CoverSubtitle {
   padding: #{$h2}rem;
-  
 }
-
 </style>

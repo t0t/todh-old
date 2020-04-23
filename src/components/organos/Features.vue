@@ -1,6 +1,6 @@
 <template>
   <aside class="Features">
-    <h3>{{ title}}</h3>
+    <h3>{{ title }}</h3>
     <div class="FeaturesList">
       <dl>
         <dt>{{ feature1 }}</dt>

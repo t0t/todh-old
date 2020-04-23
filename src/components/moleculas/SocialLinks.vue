@@ -35,7 +35,8 @@
   </ul>
 </template>
 
-<script>components/atomos
+<script>
+components / atomos;
 import IconLinkedin from "@/components/atomos/icons/IconLinkedin.vue";
 import IconInstagram from "@/components/atomos/icons/IconInstagram.vue";
 import IconMedium from "@/components/atomos/icons/IconMedium.vue";
@@ -67,14 +68,16 @@ export default {
     margin-right: #{$h0}rem;
     @include media(s1) {
       margin-right: #{$h2}rem;
-        width: #{$h1}rem;
-      }
+      width: #{$h1}rem;
+    }
     svg {
       width: #{$h2}rem;
       @include media(s0) {
         width: #{$h1}rem;
       }
-      path, rect, polygon {
+      path,
+      rect,
+      polygon {
         fill: $primary;
         &:hover {
           fill: $grey;
