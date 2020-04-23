@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Cover from "@/components/Cover.vue";
-import Brand from "@/components/Brand.vue";
-import Footer from "@/components/Footer.vue";
+import Brand from "@/components/atoms/Brand.vue";
+import Cover from "@/components/organos/Cover.vue";
+import Footer from "@/components/molecules/Footer.vue";
 
 export default {
   name: "Home",

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import IcoLogo from "./icons/IcoLogo.vue";
+import IcoLogo from "@/components/atoms/icons/IcoLogo.vue";
 
 export default {
   name: "Brand",

@@ -89,11 +89,11 @@
 
 <script>
 // @ is an alias to /src
-import Cover from "@/components/Cover.vue";
-import Brand from "@/components/Brand.vue";
-import BioExcerpt from "@/components/BioExcerpt.vue";
-import Card from "@/components/Card.vue";
-import Footer from "@/components/Footer.vue";
+import Cover from "@/components/organos/Cover.vue";
+import Brand from "@/components/atoms/Brand.vue";
+import BioExcerpt from "@/components/molecules/BioExcerpt.vue";
+import Card from "@/components/molecules/Card.vue";
+import Footer from "@/components/molecules/Footer.vue";
 
 export default {
   name: "Info",

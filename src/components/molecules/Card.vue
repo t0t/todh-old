@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     imgurl() {
-      return require("../assets/" + this.bgimg);
+      return require("@/assets/" + this.bgimg);
     },
   },
 };

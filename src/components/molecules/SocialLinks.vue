@@ -36,13 +36,13 @@
 </template>
 
 <script>
-import IconLinkedin from "./icons/IconLinkedin.vue";
-import IconInstagram from "./icons/IconInstagram.vue";
-import IconMedium from "./icons/IconMedium.vue";
-import IconTwitter from "./icons/IconTwitter.vue";
-import IconGithub from "./icons/IconGithub.vue";
-import IconUnsplash from "./icons/IconUnsplash.vue";
-import IconFacebook from "./icons/IconFacebook.vue";
+import IconLinkedin from "@/components/atoms/icons/IconLinkedin.vue";
+import IconInstagram from "@/components/atoms/icons/IconInstagram.vue";
+import IconMedium from "@/components/atoms/icons/IconMedium.vue";
+import IconTwitter from "@/components/atoms/icons/IconTwitter.vue";
+import IconGithub from "@/components/atoms/icons/IconGithub.vue";
+import IconUnsplash from "@/components/atoms/icons/IconUnsplash.vue";
+import IconFacebook from "@/components/atoms/icons/IconFacebook.vue";
 
 export default {
   name: "SocialLinks",
