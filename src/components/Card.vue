@@ -48,18 +48,17 @@ export default {
   }
   small {
     font-style: italic;
+    color: $secondary;
   }
 }
 .CardContent {
-  padding: #{$h1}rem;
-  background-color: $white;
+  background-color: $light_grey;
   @include media(s1) {
-    width: 50%;
-
-    line-height: #{$h3}rem;
+    margin-top: #{$h7}rem;
+    padding-top: #{$h3}rem;
+    padding-bottom: #{$h3}rem;
   }
   @include media(s4) {
-    padding: #{$h3}rem;
   }
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <aside class="Features">
+    <h3>{{ title}}</h3>
     <div class="FeaturesList">
       <dl>
         <dt>{{ feature1 }}</dt>
@@ -22,6 +23,7 @@
 export default {
   name: "Features",
   props: {
+    title: String,
     feature1: String,
     feature1b: String,
     feature2: String,
@@ -38,12 +40,17 @@ export default {
 
 .Features {
   padding: #{$h2}rem #{$h2}rem 0 #{$h2}rem;
-  display: block;
+  h3 {
+    text-align: center;
+    margin-left: 0;
+    // @include media(s3) {
+    //   background-color: blue;
+    // }
+  }
   &Title {
     width: 100%;
   }
   &List {
-    // padding: #{$h-1}rem;
     @include media(s2) {
       display: flex;
       justify-content: space-between;

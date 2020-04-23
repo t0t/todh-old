@@ -97,6 +97,7 @@ export default {
   background-color: $light_grey;
   &Title {
     padding-bottom: #{$h0}rem;
+    margin-left: 0;
   }
 }
 </style>

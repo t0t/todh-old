@@ -3,8 +3,8 @@
     <Brand />
 
     <Cover
-      title="Holistic Frontend-Design"
-      subtitle="Me apasiona crear prototipos web que funcionan"
+      title="The power of Now"
+      subtitle="Holistic Framework for Rapid prototyping"
       bgimg="grafico-2.svg"
     />
 
@@ -16,12 +16,13 @@
     />
 
     <Features
+      title="Features"
       feature1="Tech Stack"
-      feature1b="Vuejs, Github Pages, JAMStack, Sass, NPM, Nucleo Icons"
+      feature1b="CSS/Html, Vuejs, Github Pages, Sass, NPM, Nucleo Icons"
       feature2="Prototipado holístico de UI"
-      feature2b="Atomic Design"
-      feature3="Prototipado evolutivo"
-      feature3b="Diviértete mientras creces"
+      feature2b="Componentización, Atomic Design"
+      feature3="Static site deployed in seconds"
+      feature3b="Testing on real devices"
     />
 
     <Footer />

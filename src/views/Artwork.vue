@@ -8,9 +8,7 @@
     />
     <Gallery />
     <BioExcerpt
-      texto1="Sergio Forés es Diseñador Gráfico/Frontend especializado en desarrollo
-        de prototipos evolutivos en alta resolución. Trabaja en remoto y,
-        paralelamente, desarrolla su actividad como artista multidisciplinar."
+      texto1="Actividad como artista multidisciplinar."
       texto2="Así, orbitando varios mundos como son la tecnología, el arte y la
         sabiduría antigua, Sergio afianza con los años un corpus discursivo y
         práctico que llama TODH en torno al

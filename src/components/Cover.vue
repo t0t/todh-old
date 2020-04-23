@@ -34,10 +34,10 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  color: $white;
   background-color: $primary;
   height: 50vh;
   text-align: center;
+  color: $white;
   @include media(s1) {
     height: 75vh;
   }
@@ -52,6 +52,7 @@ export default {
 }
 .CoverSubtitle {
   padding: #{$h2}rem;
+  
 }
 
 </style>

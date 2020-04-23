@@ -20,15 +20,9 @@ export default {
 @import "@/styles/main.scss";
 
 .BioExcerpt {
-  max-width: 75%;
-  @include media(s4) {
-    padding-right: 20%;
-    padding-left: 20%;
-  }
-  h3 {
-    @include media(s4) {
-      font-size: #{$h3}rem;
-    }
+  @include media(s2) {
+    padding-top: #{$h4}em;
+    padding-bottom: #{$h3}em;
   }
 }
 </style>
