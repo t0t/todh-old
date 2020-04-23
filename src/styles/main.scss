@@ -51,7 +51,7 @@ $s6: 2300px;
 }
 
 // ****************************************
-// BASE TYPOGRAPHY
+// BASE
 // ****************************************
 
 html {
@@ -60,13 +60,17 @@ html {
 body {
   // line-height: #{$h2}rem;
 }
+
 h1,
 h2,
 h3,
 h4,
 p,
 dl,
-ul {
+ul,
+strong,
+blockquote,
+address {
   line-height: $base_line_height; //122.966%
 }
 h1 {
@@ -154,7 +158,6 @@ p {
   padding-bottom: #{$h2}rem;
   @include media(s0) {
     font-size: #{$h0}rem;
-    line-height: #{$h1}rem;
   }
   @include media(s1) {
     font-size: #{$h1}rem;
@@ -221,12 +224,23 @@ dl {
 dt {
   font-weight: bold;
 }
-dd {
+
+a {
+  // text-decoration: none;
+  color: $secondary;
 }
-ul {
+
+strong {
+  font-weight: bold;
 }
-li {
+
+blockquote {
+  color: $dark_grey;
 }
+
+// ****************************************
+// LAYOUT | MARGINS... SPACES
+// ****************************************
 
 section {
   padding: #{$h2}rem #{$h2}rem 0;
@@ -239,9 +253,7 @@ footer {
   padding: #{$h2}rem;
 }
 
-// ****************************************
-// AREAS | MARGINS... SPACES
-// ****************************************
+
 
 .golden-box {
   height: 100px;

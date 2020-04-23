@@ -4,9 +4,6 @@
 
 $phi: 1.6180339887498948482;
 
-$base_font_size: 16.2px;
-$base_line_height: 122.966%;
-
 //Base proportions and scaling ratio
 $h13: 321.916;
 $h12: 198.959;
@@ -26,6 +23,9 @@ $h-1: 0.382;
 $h-2: 0.236;
 $h-3: 0.146;
 $h-4: 0.09;
+
+$base_font_size: 16.2px;
+$base_line_height: #{$h1}em;
 
 // Fonts
 $primary_font: Avenir, Helvetica, Arial, sans-serif;
