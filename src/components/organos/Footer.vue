@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SocialLinks from "./SocialLinks.vue";
+import SocialLinks from "@/components/moleculas/SocialLinks.vue";
 export default {
   name: "Footer",
   props: {

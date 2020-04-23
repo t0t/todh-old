@@ -35,14 +35,14 @@
   </ul>
 </template>
 
-<script>
-import IconLinkedin from "./icons/IconLinkedin.vue";
-import IconInstagram from "./icons/IconInstagram.vue";
-import IconMedium from "./icons/IconMedium.vue";
-import IconTwitter from "./icons/IconTwitter.vue";
-import IconGithub from "./icons/IconGithub.vue";
-import IconUnsplash from "./icons/IconUnsplash.vue";
-import IconFacebook from "./icons/IconFacebook.vue";
+<script>components/atomos
+import IconLinkedin from "@/components/atomos/icons/IconLinkedin.vue";
+import IconInstagram from "@/components/atomos/icons/IconInstagram.vue";
+import IconMedium from "@/components/atomos/icons/IconMedium.vue";
+import IconTwitter from "@/components/atomos/icons/IconTwitter.vue";
+import IconGithub from "@/components/atomos/icons/IconGithub.vue";
+import IconUnsplash from "@/components/atomos/icons/IconUnsplash.vue";
+import IconFacebook from "@/components/atomos/icons/IconFacebook.vue";
 
 export default {
   name: "SocialLinks",

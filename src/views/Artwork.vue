@@ -25,11 +25,11 @@
 
 <script>
 /* eslint-disable */
-import Brand from "@/components/Brand.vue";
-import Gallery from "@/components/Gallery.vue";
-import Cover from "@/components/Cover.vue";
-import BioExcerpt from "@/components/BioExcerpt.vue";
-import Footer from "@/components/Footer.vue";
+import Brand from "@/components/atomos/Brand.vue";
+import Gallery from "@/components/organos/Gallery.vue";
+import Cover from "@/components/organos/Cover.vue";
+import BioExcerpt from "@/components/organos/BioExcerpt.vue";
+import Footer from "@/components/organos/Footer.vue";
 
 export default {
   name: "Artwork",

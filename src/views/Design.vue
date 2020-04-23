@@ -31,11 +31,11 @@
 
 <script>
 // @ is an alias to /src
-import Brand from "@/components/Brand.vue";
-import Cover from "@/components/Cover.vue";
-import Card from "@/components/Card.vue";
-import Features from "@/components/Features.vue";
-import Footer from "@/components/Footer.vue";
+import Brand from "@/components/atomos/Brand.vue";
+import Cover from "@/components/organos/Cover.vue";
+import Card from "@/components/organos/Card.vue";
+import Features from "@/components/organos/Features.vue";
+import Footer from "@/components/organos/Footer.vue";
 
 export default {
   name: "Design",
