@@ -4,7 +4,7 @@
     <Cover
       title="Consciousness come down"
       subtitle="to the way things vibrate"
-      bgimg="img5.jpg"
+      bgimg="img11.png"
     />
     <Gallery />
     <BioExcerpt

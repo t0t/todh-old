@@ -5,11 +5,11 @@
     <Cover
       title="T-O-D-H"
       subtitle="Observar. Discernir. Hacer. Transmitir."
-      bgimg="img2.jpg"
+      bgimg="svg_anim.svg"
     />
 
     <Card
-      bgimg="img7.jpg"
+      bgimg="2.png"
       title='"Todo según el peso, el número y la medida."'
       subtitle="Pitágoras. 500 a.C."
       text="Así, orbitando varios mundos como son la tecnología, el arte y la
@@ -70,7 +70,7 @@
     </section>
 
     <Card
-      bgimg="img6.jpg"
+      bgimg="loading.svg"
       title="La raíz profunda de la Creación es el orden y sentirlo nos reconecta dando forma a la conexión de todo cuanto existe."
       subtitle="#sentirordenformaconexion"
       text="Así, orbitando varios mundos como son la tecnología, el arte y la
