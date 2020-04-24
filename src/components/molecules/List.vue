@@ -1,17 +1,29 @@
 <template>
-  <section class="List">
+  <section>
     <ul>
-        <li>{{ texto1 }}</li>
-        <li>{{ texto2 }}</li>
-        <li>{{ texto3 }}</li>
-        <li>{{ texto4 }}</li>
-        <li>{{ texto5 }}</li>
-        <li>{{ texto6 }}</li>
+      <item-list> 
+        <navigation-link url="#">{{ texto1 }}</navigation-link>
+      </item-list>
+      <item-list> 
+        <navigation-link url="#">{{ texto2 }}</navigation-link>
+      </item-list>
+      <item-list> 
+        <navigation-link url="#">{{ texto3 }}</navigation-link>
+      </item-list>
+      <item-list> 
+        <navigation-link url="#">{{ texto4 }}</navigation-link>
+      </item-list>
+      <item-list> 
+        Item de lista sin enlace
+      </item-list>
     </ul>
   </section>
 </template>
 
 <script>
+import NavigationLink from "@/components/atoms/NavigationLink.vue";
+import ItemList from "@/components/molecules/ItemList.vue";
+
 export default {
   name: "List",
   props: {
@@ -20,8 +32,12 @@ export default {
     texto3: String,
     texto4: String,
     texto5: String,
-    texto6: String
-  }
+    texto6: String,
+  },
+  components: {
+    NavigationLink,
+    ItemList,
+  },
 };
 </script>
 

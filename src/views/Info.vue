@@ -60,7 +60,7 @@
       </p>
 
       <List 
-        texto1="Elemento de lista 1"
+        texto1="Elemento de lista"
         texto2="Otro elemento"
         texto3="Otro elemento"
         texto4="Otro elemento"

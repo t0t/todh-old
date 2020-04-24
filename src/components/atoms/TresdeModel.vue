@@ -12,7 +12,6 @@
 
 <script>
 import { ModelStl } from "vue-3d-model";
-// controls = new THREE.OrbitControls( camera );
 export default {
   data: () => ({
     rotation: {
@@ -22,15 +21,13 @@ export default {
     },
     controlsOptions: {
       enableZoom: false,
-    },
-    renderer: {
-        alpha: true
     }
   }),
   methods: {
     onLoad() {
       this.rotate();
       this.enableZoom = false;
+    //   this.loading = false;
     },
     rotate() {
       this.rotation.y += 0.01;
