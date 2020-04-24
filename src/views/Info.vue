@@ -9,7 +9,7 @@
     />
 
     <Card
-      bgimg="2.png"
+      bgimg="svg_anim.svg"
       title='"Todo según el peso, el número y la medida."'
       subtitle="Pitágoras. 500 a.C."
       text="Así, orbitando varios mundos como son la tecnología, el arte y la
@@ -60,7 +60,7 @@
       </p>
 
       <List 
-        texto1="Elemento de lista"
+        texto1="Elemento de lista 1"
         texto2="Otro elemento"
         texto3="Otro elemento"
         texto4="Otro elemento"
@@ -70,7 +70,7 @@
     </section>
 
     <Card
-      bgimg="loading.svg"
+      bgimg="svg_anim.svg"
       title="La raíz profunda de la Creación es el orden y sentirlo nos reconecta dando forma a la conexión de todo cuanto existe."
       subtitle="#sentirordenformaconexion"
       text="Así, orbitando varios mundos como son la tecnología, el arte y la
