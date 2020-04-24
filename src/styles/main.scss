@@ -13,14 +13,6 @@ $s4: 970px;
 $s5: 1240px;
 $s6: 2300px;
 
-// Sizes
-$sp1: #{$h2}rem;
-$sp2: 540px;
-$sp3: 800px;
-$sp4: 970px;
-$sp5: 1240px;
-$sp6: 2300px;
-
 /* Uso:
 @include media( s + scaling factor ) {
   property: value;
@@ -66,11 +58,9 @@ html {
   font-size: $base_font_size;
 }
 body {
-  // line-height: #{$h2}rem;
+  // line-height: $h2;
 }
 
-h1,
-h2,
 h3,
 h4,
 p,
@@ -83,70 +73,92 @@ address {
 }
 h1 {
   font-weight: bold;
-  font-size: #{$h5}rem;
-  margin: #{$h2}rem;
+  margin: $h2;
   @include media(s0) {
-    font-size: #{$h2}rem;
+    font-size: $h2;
   }
   @include media(s1) {
-    font-size: #{$h3}rem;
+    font-size: $h3;
   }
   @include media(s2) {
-    font-size: #{$h4}rem;
+    font-size: $h4;
   }
   @include media(s4) {
-    font-size: #{$h5}rem;
+    font-size: $h5;
   }
   @include media(s5) {
-    font-size: #{$h6}rem;
+    font-size: $h6;
   }
   @include media(s6) {
-    font-size: #{$h7}rem;
+    font-size: $h7;
   }
 }
 h2 {
-  font-size: #{$h3}rem;
-  padding-bottom: #{$h2}rem;
+  padding-bottom: $h2;
   @include media(s0) {
-    font-size: #{$h2}rem;
+    max-width: $h6;
+    font-size: $h2;
+    line-height: $h2;
+  }
+  @include media(s1) {
+    max-width: $h7;
+    font-size: $h2;
+    line-height: $h3;
+  }
+  @include media(s2) {
+    max-width: $h8;
+  }
+  @include media(s3) {
+    max-width: $h9;
+    font-size: $h3;
+    line-height: $h4;
+  }
+  @include media(s4) {
+    font-size: $h4;
+    line-height: $h4;
   }
 }
 h3 {
-  font-size: #{$h1}rem;
-  padding-bottom: #{$h1}rem;
+  font-size: $h1;
+  padding-bottom: $h1;
   font-weight: bold;
   @include media(s1) {
-    font-size: #{$h2}rem;
-    line-height: #{$h3}rem;
+    font-size: $h2;
+    line-height: $h3;
   }
   @include media(s2) {
-    font-size: #{$h2}rem;
+    font-size: $h2;
     font-weight: inherit;
-    margin-left: #{$h4}rem;
+    margin-left: $h4;
   }
   @include media(s3) {
-    font-size: #{$h3}rem;
-    padding-bottom: #{$h3}rem;
+    font-size: $h3;
+    padding-bottom: $h3;
   }
+ 
   @include media(s4) {
-    margin-left: #{$h6}rem;
+    margin-left: 0;
+    text-align: center;
+  } 
+  @include media(s5) {
+    font-size: $h4;
+    font-weight: inherit;
   }
 }
 h4 {
-  font-size: #{$h1}rem;
-  color: $secondary;
+  font-size: $h1;
   font-style: italic;
   @include media(s1) {
-    font-size: #{$h2}rem;
-    line-height: #{$h3}rem;
+    font-size: $h2;
+    line-height: $h3;
   }
   @include media(s2) {
-    margin-left: #{$h4}rem;
-    padding-right: #{$h4}rem;
+    margin-left: $h4;
+    padding-right: $h4;
   }
   @include media(s3) {
-    line-height: #{$h4}rem;
-    font-size: #{$h3}rem;
+    line-height: $h4;
+    font-size: $h3;
     max-width: $s3;
   }
   @include media(s4) {
@@ -156,36 +168,39 @@ h4 {
 
 h5,
 h6 {
-  font-size: #{$h1}rem;
-  padding-bottom: #{$h1}rem;
+  font-size: $h1;
+  padding-bottom: $h1;
   font-weight: bold;
   @include media(s4) {
     font-weight: inherit;
-    font-size: #{$h3}rem;
+    font-size: $h3;
   }
 }
 p {
-  font-size: #{$h1}rem;
-  padding-bottom: #{$h2}rem;
+  font-size: $h1;
+  padding-bottom: $h2;
   @include media(s0) {
-    font-size: #{$h0}rem;
+    font-size: $h0;
   }
   @include media(s1) {
-    font-size: #{$h1}rem;
-    line-height: #{$h2}rem;
+    font-size: $h1;
+    line-height: $h2;
   }
   @include media(s2) {
-    margin-left: #{$h4}rem;
-    padding-right: #{$h4}rem;
+    margin-left: $h4;
+    padding-right: $h4;
   }
   @include media(s3) {
-    font-size: #{$h2}rem;
-    line-height: #{$h3}rem;
+    font-size: $h2;
+    line-height: $h3;
     max-width: $s4;
-    margin-left: #{$h5}em;
+    margin-left: $h5;
   }
   @include media(s4) {
-    margin-left: #{$h5}em;
+    margin-left: $h5;
+  }
+  @include media(s5) {
+    padding-right: 0;
   }
 }
 
@@ -197,68 +212,68 @@ nav {
 }
 small {
   display: block;
-  font-size: #{$h2}rem;
-  padding-bottom: #{$h2}rem;
-  line-height: #{$h1}rem;
+  font-size: $h2;
+  padding-bottom: $h2;
+  line-height: $h1;
   @include media(s0) {
-    font-size: #{$h0}rem;
+    font-size: $h0;
   }
   @include media(s1) {
-    font-size: #{$h1}rem;
-    line-height: #{$h2}rem;
+    font-size: $h1;
+    line-height: $h2;
   }
   @include media(s2) {
-    margin-left: #{$h4}rem;
-    padding-right: #{$h4}rem;
+    margin-left: $h4;
+    padding-right: $h4;
   }
   @include media(s5) {
-    font-size: #{$h2}rem;
-    line-height: #{$h2}rem;
+    font-size: $h2;
+    line-height: $h2;
   }
 }
 // Lists
 ul {
-  display: block;
-  width: #{$h8}rem;
-  padding-bottom: #{$h2}rem;
-  padding-left: #{$h2}rem;  
+  // width: $h8;
+  padding-bottom: $h2;
+  padding-left: $h2;
   @include media(s1) {
-    margin-left: #{$h6}em;
+    margin-left: $h3;
+    padding-bottom: $h4;
+  }
+  @include media(s2) {
+    padding-left: $h3;
+  }
+  @include media(s3) {
+    padding-left: $h4;
+  }
+  @include media(s5) {
+    margin-right: $h4;
   }
 }
 li {
-  font-size: #{$h1}rem;
-  line-height: #{$h1}rem;
-  @include media(s0) {
-    font-size: #{$h0}rem;
-  }
+  font-size: $h0;
+  line-height: $h1;
   @include media(s1) {
-    line-height: #{$h2}rem;
-    font-size: #{$h1}rem;
-  }
-  @include media(s2) {
-    line-height: #{$h3}rem;
+    font-size: $h1;
+    line-height: $h2;
   }
   @include media(s3) {
-    font-size: #{$h2}rem;
-  }
-  @include media(s4) {
+    font-size: $h2;
+    line-height: $h3;
   }
 }
 dl {
   @include media(s2) {
-    font-size: #{$h0}rem;
-    line-height: #{$h1}rem;
+    font-size: $h0;
+    line-height: $h1;
   }
   @include media(s3) {
-    font-size: #{$h1}rem;
-    line-height: #{$h2}rem;
+    font-size: $h1;
+    line-height: $h2;
   }
   @include media(s4) {
-    font-size: #{$h2}rem;
-    line-height: #{$h3}rem;
-  }
-  @include media(s5) {
+    font-size: $h2;
+    line-height: $h3;
   }
 }
 dt {
@@ -281,16 +296,24 @@ blockquote {
 // ****************************************
 // LAYOUT | MARGINS... SPACES
 // ****************************************
-
-article {
-  padding: #{$h2}rem #{$h2}rem 0;
+.content {
+  @include media(s5) {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 }
+section,
 footer {
   background-color: #fff;
-  padding: #{$h2}rem;
 }
-
-
+article {
+  padding: $h2 $h2 0;
+}
+footer {
+  padding: $h2;
+}
 
 .golden-box {
   height: 100px;

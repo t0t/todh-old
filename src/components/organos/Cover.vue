@@ -26,6 +26,7 @@ export default {
 @import "@/styles/main.scss";
 
 .Cover {
+  // z-index: -1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,6 +36,8 @@ export default {
   background-repeat: no-repeat;
   background-position: top;
   background-color: $primary;
+  // position: sticky;
+  // top: 0;
   height: 50vh;
   text-align: center;
   color: $white;
@@ -48,10 +51,10 @@ export default {
 }
 
 .CoverTitle {
-  margin: 0;
+  // margin: 0;
 }
 .CoverSubtitle {
-  padding: #{$h2}rem;
+  // padding: $h2;
   
 }
 

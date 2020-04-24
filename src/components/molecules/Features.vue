@@ -1,6 +1,6 @@
 <template>
   <aside class="Features">
-    <h3>{{ title}}</h3>
+    <h3>{{ title }}</h3>
     <div class="FeaturesList">
       <dl>
         <dt>{{ feature1 }}</dt>
@@ -15,7 +15,6 @@
         <dd>{{ feature3b }}</dd>
       </dl>
     </div>
-    <img alt="Feature img" src="@/assets/grafico-1.svg" />
   </aside>
 </template>
 
@@ -29,23 +28,23 @@ export default {
     feature2: String,
     feature2b: String,
     feature3: String,
-    feature3b: String
-  }
+    feature3b: String,
+  },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 @import "@/styles/main.scss";
 
 .Features {
-  padding: #{$h2}rem #{$h2}rem 0 #{$h2}rem;
+  padding: $h2 $h2 0 $h2;
+  background-color: $white;
+  @include media(s5) {
+    padding: $h4;
+  }
   h3 {
     text-align: center;
     margin-left: 0;
-    // @include media(s3) {
-    //   background-color: blue;
-    // }
   }
   &Title {
     width: 100%;
@@ -56,32 +55,25 @@ export default {
       justify-content: space-between;
     }
     dl {
-      margin-bottom: #{$h-2}rem;
+      margin-bottom: $h-2;
       @include media(s0) {
-        font-size: #{$h1}rem;
+        font-size: $h1;
       }
       @include media(s1) {
-        padding: #{$h1}rem;
+        padding: $h1;
         text-align: center;
       }
       @include media(s2) {
         flex-grow: 1;
-        max-width: #{$h7}em;
+        max-width: $h7;
         background-color: $tertiary;
       }
       @include media(s4) {
-        padding: #{$h3}rem;
+        padding: $h3;
       }
       @include media(s5) {
-        padding: #{$h3}rem;
+        padding: $h3;
       }
-    }
-  }
-  img {
-    max-height: #{$h5}rem;
-    margin-top: #{$h1}rem;
-    @include media(s4) {
-      max-height: #{$h6}rem;
     }
   }
 }

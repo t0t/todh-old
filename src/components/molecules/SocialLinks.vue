@@ -53,8 +53,8 @@ export default {
     IconTwitter,
     IconGithub,
     IconFacebook,
-    IconUnsplash
-  }
+    IconUnsplash,
+  },
 };
 </script>
 
@@ -63,19 +63,26 @@ export default {
 @import "@/styles/main.scss";
 
 .SocialLinks {
-  padding-bottom: 0;
+  padding: 0;
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   a {
-    margin-right: #{$h0}rem;
+    // margin-right: $h0;
     @include media(s1) {
-      margin-right: #{$h2}rem;
-        width: #{$h1}rem;
-      }
+      // margin-right: $h2;
+      width: $h3;
+    }
     svg {
-      width: #{$h2}rem;
+      width: $h2;
       @include media(s0) {
-        width: #{$h1}rem;
+        width: $h1;
       }
-      path, rect, polygon {
+      path,
+      rect,
+      polygon {
         fill: $primary;
         &:hover {
           fill: $grey;

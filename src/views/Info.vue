@@ -24,34 +24,49 @@
     />
     <BioExcerpt
       texto1="Una visión basada en hechos reales"
-      texto2="Así, orbitando varios mundos como son la tecnología, el arte y la
+      texto2="Desde la tecnología, el arte y la
         sabiduría antigua, Sergio afianza con los años un corpus discursivo y
-        práctico que llama TODH en torno al
-        proceso mismo de la Creación y su dimensión estructural
-        holística. En este sentido su proyecto aboga por una reconexión
+        práctico en torno al proceso mismo de la Creación y su dimensión estructural
+        holística."
+    />
+    <section class="content">
+      <p>
+        En este sentido su proyecto aboga por una reconexión
         incursiva con la verdad que nos habita. Podríamos decir que su mirada
         se centra en las experiencias antes que en los objetos o los productos,
         defendiendo el desarrollo de la mente abstracta frente al de la mente
-        concreta."
-    />
-    <section class="content">
-      <h3>Formato</h3>
+        concreta.
+      </p>
       <p>
-        <a href="#">Lorem ipsum dolor sit amet</a>
-        <strong> consectetur</strong>
-        adipisicing elit. <i>Delectus</i> This is <sup>superscripted</sup> text.
-        a nulla, asperiores <mark>marked</mark> cupiditate ullam tempora
-        <del>blue</del>? Delectus facilis reiciendis incidunt! Harum repudiandae
-        repellat <em>This text is emphasized.</em>
+        En este sentido su proyecto aboga por una reconexión
+        incursiva con la verdad que nos habita. Podríamos decir que su mirada
+        se centra en las experiencias antes que en los objetos o los productos,
+        defendiendo el desarrollo de la mente abstracta frente al de la mente
+        concreta.
+      </p>
+      <p>
+        En este sentido su proyecto aboga por una reconexión
+        incursiva con la verdad que nos habita. Podríamos decir que su mirada
+        se centra en las experiencias antes que en los objetos o los productos,
+        defendiendo el desarrollo de la mente abstracta frente al de la mente
+        concreta.
+      </p>
+      <p>
+        En este sentido su proyecto aboga por una reconexión
+        incursiva con la verdad que nos habita. Podríamos decir que su mirada
+        se centra en las experiencias antes que en los objetos o los productos,
+        defendiendo el desarrollo de la mente abstracta frente al de la mente
+        concreta.
       </p>
 
-      <ul style="list-style-type:circle;">
-        <li>Elemento de l ista 1</li>
-        <li>Elemento uhg iuyg uiyg oiuyi</li>
-        <li>Elemento de un lista</li>
-        <li>Elemento de l ista 1</li>
-        <li>Elemento de l ista 1</li>
-      </ul>
+      <List 
+        texto1="Elemento de lista 1"
+        texto2="Otro elemento"
+        texto3="Otro elemento"
+        texto4="Otro elemento"
+        texto5="Otro elemento..."
+        texto6=""
+      />
     </section>
 
     <Card
@@ -78,6 +93,7 @@
 import Cover from "@/components/organos/Cover.vue";
 import Brand from "@/components/atoms/Brand.vue";
 import BioExcerpt from "@/components/molecules/BioExcerpt.vue";
+import List from "@/components/molecules/List.vue";
 import Card from "@/components/molecules/Card.vue";
 import Footer from "@/components/molecules/Footer.vue";
 
@@ -87,6 +103,7 @@ export default {
     Cover,
     Brand,
     BioExcerpt,
+    List,
     Card,
     Footer,
   },

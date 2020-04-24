@@ -65,7 +65,6 @@ export default {
 @import "@/styles/main.scss";
 
 .Gallery {
-  padding: #{$h2}rem;
   @include media(s3) {
     display: flex;
     flex-flow: wrap;
@@ -81,7 +80,7 @@ export default {
     justify-content: flex-end;
     flex-grow: 1;
     flex-basis: 400px;
-    height: #{$h7}rem;
+    height: $h7;
   }
   figure { //bg
     background-color: $tertiary;
@@ -90,13 +89,13 @@ export default {
 }
 .ItemCaption {
   text-align: center;
-  width: #{$h4}rem;
-  padding-top: #{$h0}rem;
-  padding-left: #{$h0}rem;
-  padding-right: #{$h0}rem;
+  width: $h4;
+  padding-top: $h0;
+  padding-left: $h0;
+  padding-right: $h0;
   background-color: $light_grey;
   &Title {
-    padding-bottom: #{$h0}rem;
+    padding-bottom: $h0;
     margin-left: 0;
   }
 }

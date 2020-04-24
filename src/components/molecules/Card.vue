@@ -39,7 +39,6 @@ export default {
 @import "@/styles/main.scss";
 
 .CardContainer {
-  color: $grey;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -48,37 +47,57 @@ export default {
   }
   small {
     font-style: italic;
-    color: $secondary;
     padding-bottom: 0;
   }
 }
 .CardContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
   background-color: $light_grey;
-  @include media(s1) {
-    // padding-bottom: #{$h3}rem;
-  }
 }
 .CardHeader {
-  padding-top: #{$h2}rem;
-  padding-left: #{$h2}rem;
-  padding-right: #{$h2}rem;
+  padding-top: $h2;
+  padding-left: $h2;
+  padding-right: $h2;
   @include media(s5) {
-    padding-top: #{$h4}rem;
+    padding-top: $h4;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $light_grey;
+    small {
+      line-height: $h3;
+    }
+    h4 {
+    }
   }
 }
 .CardBody {
-  padding: #{$h2}rem;
+  padding: $h2;
   @include media(s5) {
-    padding-bottom: #{$h4}rem;
+    padding-bottom: $h4;
+    padding-top: $h4;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  p {
+    @include media(s5) {
+      margin-right: $h4;
+      margin-left: $h4;
+    }
   }
 }
 .CardImage {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: #{$h6}em;
+  height: auto;
+  @include media(s4) {
+    width: $h8;
+  }
   @include media(s5) {
-    height: #{$h8}em;
+    width: $h9;
   }
 }
 </style>

@@ -23,8 +23,8 @@ export default {
 
 .Brand {
   position: fixed;
-  top: #{$h2}rem;
-  left: #{$h2}rem;
+  top: $h2;
+  left: $h2;
   z-index: 0;
   @include media(s2) {
     z-index: 2;
@@ -42,8 +42,8 @@ export default {
     fill: $secondary;
   }
   svg {
-    width: #{$h4}em;
-    height: #{$h4}em;
+    width: $h4;
+    height: $h4;
   }
 }
 </style>

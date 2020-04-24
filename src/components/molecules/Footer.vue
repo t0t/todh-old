@@ -22,8 +22,12 @@ export default {
 @import "@/styles/main.scss";
 
 .Footer {
+  z-index: -1;
+  position: sticky;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $light_grey;
 }
 </style>

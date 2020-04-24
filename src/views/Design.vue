@@ -10,13 +10,13 @@
 
     <Card
       bgimg="img4.jpg"
-      title="When thoughts become things"
-      subtitle="Desarrollo evolutivo desde el primer dia"
+      title="Thoughts become things"
+      subtitle="...and vice versa"
       text="Una visión holística y práctica del mundo del diseño de productos digitales a través de prototipos que evolucionan. Componentes reutilizables.  Haz de tu idea algo real. Orientado a pequeñas Startups con bajo presupuesto y mucha prisa."
     />
 
     <Features
-      title="Features"
+      title=":)"
       feature1="Tech Stack"
       feature1b="CSS/Html, Vuejs, Github Pages, Sass, NPM, Nucleo Icons"
       feature2="Prototipado holístico de UI"

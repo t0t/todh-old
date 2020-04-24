@@ -26,28 +26,28 @@
   display: flex;
   justify-content: flex-end;
   @include media(s1) {
-    top: #{$h2}rem;
-    right: #{$h2}rem;
+    top: $h2;
+    right: $h2;
   }
   a {
     color: $white;
-    padding: #{$h0}em;
+    padding: $h0;
     @include media(s1) {
-      padding: #{$h0}em;
+      padding: $h0;
       background-color: $secondary;
-      font-size: #{$h1}rem;
+      font-size: $h1;
     }
     @include media(s2) {
       display: block;
-      padding: #{$h1}em;
+      padding: $h1;
       background-color: transparent;
-      font-size: #{$h1}rem;
+      font-size: $h1;
       &:hover {
         background-color: $secondary;
       }
     }
     @include media(s4) {
-      font-size: #{$h2}rem;
+      font-size: $h2;
     }
     &.router-link-exact-active {
       color: $tertiary;
