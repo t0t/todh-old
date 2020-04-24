@@ -24,7 +24,7 @@ export default {
     bgimg: String,
     title: String,
     subtitle: String,
-    text: String,
+    text: String
   },
   computed: {
     imgurl() {
