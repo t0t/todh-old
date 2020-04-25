@@ -1,8 +1,11 @@
 <template>
-  <section class="Cover" :style="{ backgroundImage: `url(${imgurl})` }">
-    <h1 class="CoverTitle">{{ title }}</h1>
-    <h2 class="CoverSubtitle">{{ subtitle }}</h2>
-  </section>
+  <hgroup class="Cover" 
+  :style="{ backgroundImage: `url(${imgurl})` }"
+  role="banner"
+  >
+      <h1 class="CoverTitle">{{ title }}</h1>
+      <h2 class="CoverSubtitle">{{ subtitle }}</h2>
+  </hgroup>
 </template>
 
 <script>
@@ -46,7 +49,6 @@ export default {
   }
   @include media(s2) {
     height: 100vh;
-    background-position: left;
   }
 }
 
@@ -54,7 +56,7 @@ export default {
   // margin: 0;
 }
 .CoverSubtitle {
-  // padding: $h2;
+  margin-right: 0;
   
 }
 

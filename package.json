@@ -11,7 +11,6 @@
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-3d-model": "^1.2.2",
-    "vue-load-image": "^0.1.9",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {

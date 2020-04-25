@@ -1,19 +1,19 @@
 <template>
-  <article class="CardContainer">
+  <aside class="CardContainer">
     <div class="CardContent">
-      <div
+      <aside
         class="CardImage"
         :style="{ backgroundImage: `url(${imgurl})` }"
-      ></div>
-      <header class="CardHeader">
+      ></aside>
+      <hgroup class="CardHeader">
         <h4>{{ title }}</h4>
         <small>{{ subtitle }}</small>
-      </header>
-      <div class="CardBody">
+      </hgroup>
+      <main class="CardBody">
         <p>{{ text }}</p>
-      </div>
+      </main>
     </div>
-  </article>
+  </aside>
 </template>
 
 <script>

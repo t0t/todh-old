@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
-    <nav id="MainNav">
+  <main id="app" role="main">
+    <nav id="MainNav" role="navigation">
       <router-link to="/artwork">Artwork</router-link>
       <router-link to="/design">Prototyping</router-link>
       <router-link to="/info">TODH</router-link>
     </nav>
     <router-view />
-  </div>
+  </main>
 </template>
 
 <style lang="scss">

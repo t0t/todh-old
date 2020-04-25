@@ -1,5 +1,5 @@
 <template>
-  <div class="Brand">
+  <div class="Brand" role="logo">
     <router-link to="/">
       <IcoLogo />
     </router-link>
