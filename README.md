@@ -57,6 +57,7 @@ npm run lint
 - [x] Inline svg with Nucleo Icons
 - [x] Routing in Vue
 - [ ] Prismic implementation
+- [ ] https://codingpotions.com/vue-slots
 
 
 ### Configuration

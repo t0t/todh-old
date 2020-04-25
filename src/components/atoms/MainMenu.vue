@@ -1,38 +1,32 @@
 <template>
-  <div id="app">
+  <nav id="MainNav" role="navigation">
     <button class="toggle" v-on:click="show = !show">|||</button>
-    <nav id="MainNav" role="navigation">
-    <transition name="fade">
+    <transition 
+      name="fade"
+    >
       <ul v-if="show">
         <router-link to="/artwork">Artwork</router-link>
         <router-link to="/design">Prototyping</router-link>
         <router-link to="/info">TODH</router-link>
       </ul>
+      <router-view />
     </transition>
   </nav>
-    <router-view />
-  </div>
 </template>
+
 <script>
 export default {
   name: "MainMenu",
   data: () => {
     return {
-      show: false,
-    };
-  },
+      show: false
+    }
+  }
 };
 </script>
 
 <style lang="scss">
 @import "@/styles/main.scss";
-
-#app {
-  font-family: $primary_font;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
 
 button.toggle {
   position: fixed;
@@ -101,7 +95,7 @@ button.toggle {
       border-bottom: $h-1 solid $black_light;
 
       &:hover {
-        cursor: pointer;
+        cursor: default;
       }
     }
   }

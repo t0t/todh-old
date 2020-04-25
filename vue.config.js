@@ -1,4 +1,5 @@
 module.exports = {
+<<<<<<< HEAD
   publicPath: process.env.NODE_ENV === "production" ? "/" : "/todh/",
 
   chainWebpack: config => {
@@ -10,3 +11,9 @@ module.exports = {
       .loader(require.resolve("@storybook/addon-storysource/loader"));
   }
 };
+=======
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/'
+    : '/todh/'
+}
+>>>>>>> master

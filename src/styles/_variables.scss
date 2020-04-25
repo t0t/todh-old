@@ -3,29 +3,29 @@
 // ****************************************
 
 $phi: 1.6180339887498948482;
-
+$unit: rem;
 //Base proportions and scaling ratio
-$h13: 321.916;
-$h12: 198.959;
-$h11: 122.966;
-$h10: 75.999;
-$h9: 46.971;
-$h8: 29.03;
-$h7: 17.942;
-$h6: 11.089;
-$h5: 6.854;
-$h4: 4.236;
-$h3: 2.618;
-$h2: 1.618;
-$h1: 1; // 1.6180339887498948482px
-$h0: 0.618;
-$h-1: 0.382;
-$h-2: 0.236;
-$h-3: 0.146;
-$h-4: 0.09;
+$h13: 321.916#{$unit};
+$h12: 198.959#{$unit};
+$h11: 122.966#{$unit};
+$h10: 75.999#{$unit};
+$h9: 46.971#{$unit};
+$h8: 29.03#{$unit};
+$h7: 17.942#{$unit};
+$h6: 11.089#{$unit};
+$h5: 6.854#{$unit};
+$h4: 4.236#{$unit};
+$h3: 2.618#{$unit};
+$h2: 1.618#{$unit};
+$h1: 1#{$unit}; // 1.6180339887498948482px
+$h0: 0.618#{$unit};
+$h-1: 0.382#{$unit};
+$h-2: 0.236#{$unit};
+$h-3: 0.146#{$unit};
+$h-4: 0.09#{$unit};
 
 $base_font_size: 16.2px;
-$base_line_height: #{$h1}em;
+$base_line_height: $h1;
 
 // Fonts
 $primary_font: Avenir, Helvetica, Arial, sans-serif;
@@ -34,16 +34,16 @@ $primary_font: Avenir, Helvetica, Arial, sans-serif;
 
 // AREA SIZES
 $base_font_size_phipx: 10px * $phi !default;
-$size: (100 * $phi) / 2;
 
 // Colors
 $white: #fff;
 $black: #000;
 $black_light: #2d2d2d;
 
-$light_grey: #e3e3e3;
-$grey: #555;
-$dark_grey: #777;
+$light_grey: #d0d0d0;
+$grey: #373737;
+// $dark_grey: #777;
+$dark_grey: #242424;
 
 $primary: $black_light;
 $secondary: #4a2e26;

@@ -4,11 +4,11 @@
     <Cover
       title="Consciousness come down"
       subtitle="to the way things vibrate"
-      bgimg="img1.jpg"
+      bgimg="img11.jpg"
     />
     <Gallery />
     <BioExcerpt
-      texto1="Actividad como artista multidisciplinar."
+      texto1="Incursión a la Creación misma"
       texto2="Así, orbitando varios mundos como son la tecnología, el arte y la
         sabiduría antigua, Sergio afianza con los años un corpus discursivo y
         práctico que llama TODH en torno al
@@ -19,17 +19,35 @@
         defendiendo el desarrollo de la mente abstracta frente al de la mente
         concreta."
     />
+    <Features
+      title=":)"
+      feature1="Materiales"
+      feature1b="PLA, Epoxi&Damar resins, Wax, Sand..."
+      feature2="Idea"
+      feature2b="Arte consciente"
+      feature3="Proceso"
+      feature3b="Sin fin"
+    />
     <Footer />
   </div>
 </template>
 
 <script>
 /* eslint-disable */
+<<<<<<< HEAD
 import Brand from "@/components/atomos/Brand.vue";
 import Gallery from "@/components/organos/Gallery.vue";
 import Cover from "@/components/organos/Cover.vue";
 import BioExcerpt from "@/components/organos/BioExcerpt.vue";
 import Footer from "@/components/organos/Footer.vue";
+=======
+import Brand from "@/components/atoms/Brand.vue";
+import Gallery from "@/components/molecules/Gallery.vue";
+import Cover from "@/components/organos/Cover.vue";
+import BioExcerpt from "@/components/molecules/BioExcerpt.vue";
+import Features from "@/components/molecules/Features.vue";
+import Footer from "@/components/molecules/Footer.vue";
+>>>>>>> master
 
 export default {
   name: "Artwork",
@@ -38,6 +56,7 @@ export default {
     Cover,
     Gallery,
     BioExcerpt,
+    Features,
     Footer
   }
 };

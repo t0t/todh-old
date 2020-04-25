@@ -1,8 +1,11 @@
 <template>
-  <section class="Cover" :style="{ backgroundImage: `url(${imgurl})` }">
-    <h1 class="CoverTitle">{{ title }}</h1>
-    <h2 class="CoverSubtitle">{{ subtitle }}</h2>
-  </section>
+  <hgroup class="Cover" 
+  :style="{ backgroundImage: `url(${imgurl})` }"
+  role="banner"
+  >
+      <h1 class="CoverTitle">{{ title }}</h1>
+      <h2 class="CoverSubtitle">{{ subtitle }}</h2>
+  </hgroup>
 </template>
 
 <script>
@@ -26,6 +29,7 @@ export default {
 @import "@/styles/main.scss";
 
 .Cover {
+  // z-index: -1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,6 +39,8 @@ export default {
   background-repeat: no-repeat;
   background-position: top;
   background-color: $primary;
+  // position: sticky;
+  // top: 0;
   height: 50vh;
   text-align: center;
   color: $white;
@@ -43,14 +49,18 @@ export default {
   }
   @include media(s2) {
     height: 100vh;
-    background-position: left;
   }
 }
 
 .CoverTitle {
-  margin: 0;
+  // margin: 0;
 }
 .CoverSubtitle {
+<<<<<<< HEAD:src/components/organos/Cover.vue
   padding: #{$h2}rem;
+=======
+  margin-right: 0;
+  
+>>>>>>> master:src/components/Cover.vue
 }
 </style>
