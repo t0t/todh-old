@@ -1,7 +1,9 @@
 <template>
   <nav id="MainNav" role="navigation">
     <button class="toggle" v-on:click="show = !show">|||</button>
-    <transition name="fade">
+    <transition 
+      name="fade"
+    >
       <ul v-if="show">
         <router-link to="/artwork">Artwork</router-link>
         <router-link to="/design">Prototyping</router-link>
@@ -33,13 +35,20 @@ button.toggle {
   width: $h4;
   height: $h4;
   border: none;
-  color: white;
+  color: $white;
   font-size: $h2;
   font-weight: bold;
   z-index: 2;
   &:hover {
     cursor: pointer;
   }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .1s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 
 #MainNav {

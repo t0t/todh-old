@@ -23,11 +23,14 @@ export default {
 
 .Footer {
   z-index: -1;
-  position: sticky;
-  bottom: 0;
+  // position: sticky;
+  // bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $light_grey;
+  // margin-top: $h-2;
+  // height: 200px;
+  // background-color: red;
 }
 </style>

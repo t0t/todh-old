@@ -5,7 +5,7 @@
     <Cover
       title="The power of Now"
       subtitle="Holistic Framework for Rapid prototyping"
-      bgimg="img10.png"
+      bgimg="img10.jpg"
     />
 
     <Card

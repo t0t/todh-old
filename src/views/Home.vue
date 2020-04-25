@@ -6,7 +6,7 @@
       subtitle="Original 3D-printed Artwork & Modern prototyping for the web"
       bgimg="img4.jpg"
     />
-    <TresdeModel />
+    <!-- <TresdeModel /> -->
     <Footer />
   </div>
 </template>
@@ -14,7 +14,7 @@
 <script>
 import Brand from "@/components/atoms/Brand.vue";
 import Cover from "@/components/organos/Cover.vue";
-import TresdeModel from "@/components/atoms/TresdeModel.vue";
+// import TresdeModel from "@/components/atoms/TresdeModel.vue";
 import Footer from "@/components/molecules/Footer.vue";
 
 export default {
@@ -22,8 +22,8 @@ export default {
   components: {
     Cover,
     Brand,
-    TresdeModel,
     Footer
+    // TresdeModel,
   }
 };
 </script>
