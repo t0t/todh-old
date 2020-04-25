@@ -1,45 +1,48 @@
 <template>
-  <div class="Gallery">
-    <ul :style="listLength">
-      <li v-for="(card, index) in cards" 
+  <section>
+    <ul class="Gallery" :style="listLength">
+    <li 
+      v-for="(obra, index) in obras" 
       :key="index" 
-      :style="listPosition">
-        <GalleryItem :item="card" :active="index == currentIndex" />
-      </li>
-    </ul>
-  </div>
+      :style="listPosition"
+    >
+      <GalleryItem :item="obra" :active="index == currentIndex" />
+    </li>
+  </ul>
+  </section>
 </template>
 
 <script>
-// CARD-LIST
-  import GalleryItem from '@/components/molecules/GalleryItem'
+import GalleryItem from "@/components/molecules/GalleryItem";
 
 export default {
   name: "Gallery",
   data: () => {
-      return {
-        touch: {
-          startX: 0,
-          endX: 0
-        }
-      }
-    },
+    return {
+      touch: {
+        startX: 0,
+        endX: 0,
+      },
+      counter: 0,
+      show: true
+    };
+  },
   computed: {
-    cards() {
-      return this.$store.getters.cards;
+    obras() {
+      return this.$store.getters.obras;
     },
     currentIndex() {
       return this.$store.getters.currentIndex;
     },
     listLength() {
-      return { width: this.cards.length * 100 + '%' };
+      return { width: this.obras.length * 300 + "px" };
     },
     listPosition() {
-      return { transform: 'translateX(-'+ this.currentIndex * 100 +'%)' };
+      return { transform: "translateX(-" + this.currentIndex * 100 + "%)" };
     }
   },
   components: {
-    GalleryItem
+    GalleryItem,
   },
   methods: {
     touchstart(event) {
@@ -50,20 +53,21 @@ export default {
       this.touch.endX = event.touches[0].clientX;
     },
     touchend() {
-      if(!this.touch.endX || Math.abs(this.touch.endX - this.touch.startX) < 20)
+      if (
+        !this.touch.endX ||
+        Math.abs(this.touch.endX - this.touch.startX) < 20
+      )
         return;
-        
-      if(this.touch.endX < this.touch.startX)
-        this.$store.commit('nextIndex');
-      else
-        this.$store.commit('prevIndex');
+
+      if (this.touch.endX < this.touch.startX) this.$store.commit("nextIndex");
+      else this.$store.commit("prevIndex");
     }
   },
   mounted() {
-    this.$el.addEventListener('touchstart', event => this.touchstart(event));
-    this.$el.addEventListener('touchmove', event => this.touchmove(event));
-    this.$el.addEventListener('touchend', () => this.touchend());
-  }
+    this.$el.addEventListener("touchstart", (event) => this.touchstart(event));
+    this.$el.addEventListener("touchmove", (event) => this.touchmove(event));
+    this.$el.addEventListener("touchend", () => this.touchend());
+  },
 };
 /* eslint-disable */
 </script>
@@ -73,39 +77,37 @@ export default {
 @import "@/styles/main.scss";
 
 .Gallery {
-  @include media(s3) {
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: row-reverse;
-    order: 2;
-    &:last-child {
-      order: 1;
-    }
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  // width: 100%;
+  height: 500px;
+  background-color: $black;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  &.open {
+    height: 600px;
+    transform: translateY(-100px);
   }
-  &Item {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-grow: 1;
-    flex-basis: 400px;
-    height: $h7;
-  }
-  figure {
-    //bg
-    background-color: $tertiary;
+  .img {
+    width: 50%;
+    height: 500px;
+    background-position: center;
     background-size: cover;
   }
-}
-.ItemCaption {
-  text-align: center;
-  width: $h4;
-  padding-top: $h0;
-  padding-left: $h0;
-  padding-right: $h0;
-  background-color: $light_grey;
-  &Title {
-    padding-bottom: $h0;
-    margin-left: 0;
+  .title {
+    position: absolute;
+    top: 50px;
+    padding: $h0 $h1;
+    height: 40px;
+    background-color: rgba($color: $light_grey, $alpha: 0.2);
+    color: $white;
+  }
+  .description {
+    padding: 20px;
+    color: #333;
   }
 }
 </style>

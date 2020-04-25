@@ -1,5 +1,6 @@
 <template>
-  <div class="card" :class="{'open': open && active}"
+  <div class="GalleryItem" 
+    :class="{'open': open && active}"
     @click="open = !open">
     <div class="img" :style="backgroundImage"></div>
     <div class="title">{{ item.title }}</div>
@@ -8,7 +9,6 @@
 </template>
 
 <script>
-// CARD
   export default {
     data: () => {
       return {
@@ -21,18 +21,19 @@
     ],
     computed: {
       backgroundImage() {
-        return { 'background-image': 'url('+ require('@/assets'+ this.item.img) +')' };
+        return { 'background-image': 'url('+ require('../../assets'+ this.item.img) +')' };
       }
     }
   }
 </script>
 
-<style lang="scss" scoped>
-  .card {
+<style lang="scss">
+@import "@/styles/main.scss";
+
+  .GalleryItem {
     position: relative;
     width: 100%;
     height: 600px;
-    background-color: #efefef;
     overflow: hidden;
     transition: all .5s ease;
 
@@ -42,8 +43,8 @@
     }
 
     .img {
-      width: 100%;
-      height: 600px;
+      width: 400px;
+      height: 100px;
       background-position: center;
       background-size: cover; 
     }
@@ -51,17 +52,11 @@
     .title {
       position: absolute;
       top: 50px;
-      padding: 5px 20px;
-      width: calc(100% - 20px);
+      width: calc(100vw - 10%);
       height: 40px;
-      font-size: 1.6rem;
-      color: #fff;
-      background-color: rgba($color: #000000, $alpha: .5);
+      background-color: $secondary;
     }
 
-    .description {
-      padding: 20px;
-      color: #333;
-    }
+    .description {}
   }
 </style>
