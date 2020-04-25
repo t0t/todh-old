@@ -1,26 +1,37 @@
 <template>
   <div id="app">
-    <button class="toggle" v-on:click="show = !show">|||</button>
+    <div
+      class="BrandToggle"
+      role="logo"
+      v-on:click="show = !show"
+    >
+      <IcoLogo />
+    </div>
     <nav id="MainNav" role="navigation">
-    <transition name="fade">
-      <ul v-if="show">
-        <router-link to="/artwork">Artwork</router-link>
-        <router-link to="/design">Prototyping</router-link>
-        <router-link to="/info">TODH</router-link>
-      </ul>
-    </transition>
-  </nav>
+      <transition name="fade">
+        <ul v-if="show">
+          <router-link to="/artwork">Artwork</router-link>
+          <router-link to="/design">Prototyping</router-link>
+          <router-link to="/info">TODH</router-link>
+        </ul>
+      </transition>
+    </nav>
     <router-view />
   </div>
 </template>
+
 <script>
+import IcoLogo from "@/components/atoms/icons/IcoLogo.vue";
+
 export default {
-  name: "MainMenu",
   data: () => {
     return {
       show: false,
     };
   },
+  components: {
+    IcoLogo
+  }
 };
 </script>
 
@@ -34,7 +45,7 @@ export default {
   text-align: center;
 }
 
-button.toggle {
+.toggle {
   position: fixed;
   top: 0;
   right: 0;
@@ -59,6 +70,23 @@ button.toggle {
   opacity: 0;
 }
 
+.BrandToggle {
+  & path.sentir {
+    fill: $white;
+    stroke: none;
+  }
+  & path.hacer {
+    stroke: $dark_grey;
+    stroke-width: 0.5px;
+  }
+  & circle {
+    fill: $secondary;
+  }
+  svg {
+    width: $h4;
+    height: $h4;
+  }
+}
 #MainNav {
   ul {
     position: fixed;

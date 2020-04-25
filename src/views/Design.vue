@@ -1,6 +1,6 @@
 <template>
+
   <div class="design">
-    <Brand />
 
     <Cover
       title="The power of Now"
@@ -31,7 +31,6 @@
 
 <script>
 // @ is an alias to /src
-import Brand from "@/components/atoms/Brand.vue";
 import Card from "@/components/molecules/Card.vue";
 import Features from "@/components/molecules/Features.vue";
 import Footer from "@/components/molecules/Footer.vue";
@@ -40,7 +39,6 @@ import Cover from "@/components/organos/Cover.vue";
 export default {
   name: "Design",
   components: {
-    Brand,
     Cover,
     Card,
     Features,

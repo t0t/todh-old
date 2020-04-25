@@ -1,7 +1,5 @@
 <template>
   <div class="info">
-    <Brand />
-
     <Cover
       title="T-O-D-H"
       subtitle="Observar. Discernir. Hacer. Transmitir."
@@ -29,37 +27,34 @@
         práctico en torno al proceso mismo de la Creación y su dimensión estructural
         holística."
     />
+
     <section class="content">
       <p>
-        En este sentido su proyecto aboga por una reconexión
-        incursiva con la verdad que nos habita. Podríamos decir que su mirada
-        se centra en las experiencias antes que en los objetos o los productos,
-        defendiendo el desarrollo de la mente abstracta frente al de la mente
-        concreta.
+        En este sentido su proyecto aboga por una reconexión incursiva con la
+        verdad que nos habita. Podríamos decir que su mirada se centra en las
+        experiencias antes que en los objetos o los productos, defendiendo el
+        desarrollo de la mente abstracta frente al de la mente concreta.
       </p>
       <p>
-        En este sentido su proyecto aboga por una reconexión
-        incursiva con la verdad que nos habita. Podríamos decir que su mirada
-        se centra en las experiencias antes que en los objetos o los productos,
-        defendiendo el desarrollo de la mente abstracta frente al de la mente
-        concreta.
+        En este sentido su proyecto aboga por una reconexión incursiva con la
+        verdad que nos habita. Podríamos decir que su mirada se centra en las
+        experiencias antes que en los objetos o los productos, defendiendo el
+        desarrollo de la mente abstracta frente al de la mente concreta.
       </p>
       <p>
-        En este sentido su proyecto aboga por una reconexión
-        incursiva con la verdad que nos habita. Podríamos decir que su mirada
-        se centra en las experiencias antes que en los objetos o los productos,
-        defendiendo el desarrollo de la mente abstracta frente al de la mente
-        concreta.
+        En este sentido su proyecto aboga por una reconexión incursiva con la
+        verdad que nos habita. Podríamos decir que su mirada se centra en las
+        experiencias antes que en los objetos o los productos, defendiendo el
+        desarrollo de la mente abstracta frente al de la mente concreta.
       </p>
       <p>
-        En este sentido su proyecto aboga por una reconexión
-        incursiva con la verdad que nos habita. Podríamos decir que su mirada
-        se centra en las experiencias antes que en los objetos o los productos,
-        defendiendo el desarrollo de la mente abstracta frente al de la mente
-        concreta.
+        En este sentido su proyecto aboga por una reconexión incursiva con la
+        verdad que nos habita. Podríamos decir que su mirada se centra en las
+        experiencias antes que en los objetos o los productos, defendiendo el
+        desarrollo de la mente abstracta frente al de la mente concreta.
       </p>
 
-      <List 
+      <List
         texto1="Elemento de lista 1"
         texto2="Otro elemento"
         texto3="Otro elemento"
@@ -91,7 +86,6 @@
 <script>
 // @ is an alias to /src
 import Cover from "@/components/organos/Cover.vue";
-import Brand from "@/components/atoms/Brand.vue";
 import BioExcerpt from "@/components/molecules/BioExcerpt.vue";
 import List from "@/components/molecules/List.vue";
 import Card from "@/components/molecules/Card.vue";
@@ -101,11 +95,10 @@ export default {
   name: "Info",
   components: {
     Cover,
-    Brand,
     BioExcerpt,
     List,
     Card,
-    Footer,
-  },
+    Footer
+  }
 };
 </script>

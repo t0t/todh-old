@@ -1,12 +1,14 @@
 <template>
   <div class="artwork">
-    <Brand />
+
     <Cover
       title="Consciousness come down"
       subtitle="to the way things vibrate"
       bgimg="img11.jpg"
     />
+
     <Gallery />
+
     <BioExcerpt
       texto1="Incursión a la Creación misma"
       texto2="Así, orbitando varios mundos como son la tecnología, el arte y la
@@ -19,6 +21,7 @@
         defendiendo el desarrollo de la mente abstracta frente al de la mente
         concreta."
     />
+
     <Features
       title=":)"
       feature1="Materiales"
@@ -29,12 +32,12 @@
       feature3b="Sin fin"
     />
     <Footer />
+
   </div>
 </template>
 
 <script>
 /* eslint-disable */
-import Brand from "@/components/atoms/Brand.vue";
 import Gallery from "@/components/molecules/Gallery.vue";
 import Cover from "@/components/organos/Cover.vue";
 import BioExcerpt from "@/components/molecules/BioExcerpt.vue";
@@ -44,7 +47,6 @@ import Footer from "@/components/molecules/Footer.vue";
 export default {
   name: "Artwork",
   components: {
-    Brand,
     Cover,
     Gallery,
     BioExcerpt,
