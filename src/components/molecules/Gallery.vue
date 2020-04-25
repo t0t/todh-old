@@ -82,7 +82,6 @@ export default {
   padding-left: 0;
   padding-right: 0;
   position: relative;
-  // width: 100%;
   height: 500px;
   background-color: $black;
   overflow: hidden;
@@ -107,7 +106,7 @@ export default {
   }
   .description {
     padding: 20px;
-    color: #333;
+    color: $white;
   }
 }
 </style>
