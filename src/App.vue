@@ -1,16 +1,25 @@
 <template>
-  <main id="app" role="main">
-    <MainMenu></MainMenu>
+  <div id="app">
+    <button class="toggle" v-on:click="show = !show">|||</button>
+    <nav id="MainNav" role="navigation">
+    <transition name="fade">
+      <ul v-if="show">
+        <router-link to="/artwork">Artwork</router-link>
+        <router-link to="/design">Prototyping</router-link>
+        <router-link to="/info">TODH</router-link>
+      </ul>
+    </transition>
+  </nav>
     <router-view />
-  </main>
+  </div>
 </template>
-
 <script>
-import MainMenu from "@/components/atoms/MainMenu.vue";
-
 export default {
-  components: {
-    MainMenu,
+  name: "MainMenu",
+  data: () => {
+    return {
+      show: false,
+    };
   },
 };
 </script>
@@ -22,6 +31,79 @@ export default {
   font-family: $primary_font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
+button.toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $dark_grey;
+  width: $h4;
+  height: $h4;
+  border: none;
+  color: $white;
+  font-size: $h2;
+  font-weight: bold;
+  z-index: 2;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+#MainNav {
+  ul {
+    position: fixed;
+    right: $h4;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 0;
+    height: $h4;
+    margin-right: 0;
+    background-color: $dark_grey;
+    // @include media(s1) {
+    //   top: $h2;
+    //   right: $h2;
+    // }
+  }
+  a {
+    color: $white;
+    padding: $h0;
+    @include media(s1) {
+      padding: $h0;
+      background-color: $secondary;
+      font-size: $h1;
+    }
+    @include media(s2) {
+      display: block;
+      padding: $h1;
+      background-color: transparent;
+      font-size: $h1;
+      &:hover {
+        background-color: $secondary;
+      }
+    }
+    @include media(s4) {
+      font-size: $h2;
+    }
+    &.router-link-exact-active {
+      color: $tertiary;
+      border-bottom: $h-1 solid $black_light;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
 </style>

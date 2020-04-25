@@ -9,6 +9,7 @@
         <router-link to="/design">Prototyping</router-link>
         <router-link to="/info">TODH</router-link>
       </ul>
+      <router-view />
     </transition>
   </nav>
 </template>
@@ -18,9 +19,9 @@ export default {
   name: "MainMenu",
   data: () => {
     return {
-      show: false,
-    };
-  },
+      show: false
+    }
+  }
 };
 </script>
 
@@ -44,8 +45,9 @@ button.toggle {
   }
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .1s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;

@@ -1,7 +1,5 @@
 module.exports = {
-  publicPath: '/todh/',
-
-  css: {
-    sourceMap: true
-  }
-};
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/'
+    : '/todh/'
+}
