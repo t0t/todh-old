@@ -1,84 +1,69 @@
 <template>
   <div class="Gallery">
-    <button @click.prevent="change.image(0)">Botón 1</button>
-    <button @click.prevent="change.image(1)">Botón 1</button>
-    <button @click.prevent="change.image(2)">Botón 1</button>
-    <button @click.prevent="change.image(3)">Botón 1</button>
-
-    <img
-    class="GalleryItem"
-    v-for="(image, idx) in images"
-    :src="image.src" 
-    :alt="image.titulo"
-    :key="idx"
-    />
-    <!-- <div
-        slot="image"
-        style="background-image: url(./gallery/image1.jpg)"
-        data-src="./gallery/image1.jpg"
-      ></div>
-      <img slot="preloader" src="@/assets/loading.svg" /> -->
-    <!-- <div slot="error">image load fails</div> -->
+    <ul :style="listLength">
+      <li v-for="(card, index) in cards" 
+      :key="index" 
+      :style="listPosition">
+        <GalleryItem :item="card" :active="index == currentIndex" />
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-// import VueLoadImage from "vue-load-image";
+// CARD-LIST
+  import GalleryItem from '@/components/molecules/GalleryItem'
 
 export default {
   name: "Gallery",
-  mounted() {
-    console.log("Galeria cargada")
-  },
-  props: {
-    images: {
-      type: Array,
-      default: () => [
-        {
-          src: "./gallery/image1.jpg",
-          titulo: "091120"
-        },
-        {
-          src: "./gallery/image2.jpg",
-          titulo: "240520"
-        },
-        {
-          src: "./gallery/image3.jpg",
-          titulo: "191120"
-        },
-        {
-          src: "./gallery/image4.jpg",
-          titulo: "011120"
-        },
-        {
-          src: "./gallery/image5.jpg",
-          titulo: "011120"
-        },
-        {
-          src: "./gallery/image6.jpg",
-          titulo: "041120"
-        },
-        {
-          src: "./gallery/image7.jpg",
-          titulo: "011120"
-        },
-        {
-          src: "./gallery/image8.jpg",
-          titulo: "231120"
+  data: () => {
+      return {
+        touch: {
+          startX: 0,
+          endX: 0
         }
-      ]
+      }
+    },
+  computed: {
+    cards() {
+      return this.$store.getters.cards;
+    },
+    currentIndex() {
+      return this.$store.getters.currentIndex;
+    },
+    listLength() {
+      return { width: this.cards.length * 100 + '%' };
+    },
+    listPosition() {
+      return { transform: 'translateX(-'+ this.currentIndex * 100 +'%)' };
     }
   },
-  // methods: {
-  //   handleChangeImage() {
-  //     const randomImageNumber = Math.floor(Math.random() * 999) + 1;
-  //     this.src =
-  //       "./gallery/image" + randomImageNumber + ".jpg";
-  //   },
-  // },
   components: {
-    // "vue-load-image": VueLoadImage,
+    GalleryItem
   },
+  methods: {
+    touchstart(event) {
+      this.touch.startX = event.touches[0].clientX;
+      this.touch.endX = 0;
+    },
+    touchmove(event) {
+      this.touch.endX = event.touches[0].clientX;
+    },
+    touchend() {
+      if(!this.touch.endX || Math.abs(this.touch.endX - this.touch.startX) < 20)
+        return;
+        
+      if(this.touch.endX < this.touch.startX)
+        this.$store.commit('nextIndex');
+      else
+        this.$store.commit('prevIndex');
+    }
+  },
+  mounted() {
+    this.$el.addEventListener('touchstart', event => this.touchstart(event));
+    this.$el.addEventListener('touchmove', event => this.touchmove(event));
+    this.$el.addEventListener('touchend', () => this.touchend());
+  }
 };
 /* eslint-disable */
 </script>
@@ -105,7 +90,8 @@ export default {
     flex-basis: 400px;
     height: $h7;
   }
-  figure { //bg
+  figure {
+    //bg
     background-color: $tertiary;
     background-size: cover;
   }
